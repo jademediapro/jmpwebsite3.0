@@ -2,7 +2,7 @@ import { ArrowUp, Check, Facebook, Instagram, Linkedin, Loader2, Mail, Phone, Yo
 import { Link } from "@tanstack/react-router";
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
-import logo from "@/assets/jademediapro-logo.svg.asset.json";
+import logo from "@/assets/jademediapro-logo.svg";
 
 type FooterLink = { labelKey: string; to?: string; href?: string };
 
