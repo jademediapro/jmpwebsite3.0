@@ -1,0 +1,399 @@
+{
+  "nav": {
+    "home": "Accueil",
+    "services": "Services",
+    "projects": "Projets",
+    "blog": "Blogue",
+    "about": "À propos",
+    "contact": "Contact",
+    "startHere": "Commencer ici",
+    "startFree": "Commencer gratuitement",
+    "getQuote": "Obtenir un devis",
+    "bookAppointment": "Prendre rendez-vous",
+    "getInTouch": "Nous joindre",
+    "menu": "Menu"
+  },
+  "hero": {
+    "title": "Agence numérique",
+    "in": "à",
+    "tagline": "Nous faisons rayonner les marques et rendons la concurrence jalouse.",
+    "chips": {
+      "branding": "Image de marque",
+      "coding": "Développement",
+      "marketing": "Marketing",
+      "fullStack": "Développement intégral",
+      "audience": "Engagement du public"
+    }
+  },
+  "feedback": {
+    "title": "Témoignages de nos clients",
+    "prev": "Témoignage précédent",
+    "next": "Témoignage suivant"
+  },
+  "faq": {
+    "title": "Foire aux",
+    "titleLine2": "questions"
+  },
+  "footer": {
+    "tagline": "JadeMediaPro est votre partenaire stratégique pour la croissance numérique. Nous créons des marques et des expériences qui comptent.",
+    "work": "Travaux",
+    "about": "À propos",
+    "services": "Services",
+    "newsletter": "Infolettre",
+    "newsletterSub": "Abonnez-vous pour recevoir nos analyses, études de cas et nouveautés.",
+    "emailPlaceholder": "Entrez votre courriel",
+    "newsletterSubmit": "S’abonner",
+    "newsletterSuccess": "Merci — vous êtes inscrit !",
+    "newsletterInvalid": "Veuillez saisir une adresse courriel valide.",
+    "newsletterError": "Une erreur s’est produite. Veuillez réessayer.",
+    "newsletterDuplicate": "Vous êtes déjà inscrit — merci !",
+    "rights": "© 2026 JadeMediaPro. Tous droits réservés.",
+    "terms": "Conditions générales",
+    "privacy": "Politique de confidentialité",
+    "links": {
+      "caseStudies": "Études de cas",
+      "process": "Processus",
+      "showreel": "Démo vidéo",
+      "photos": "Photos",
+      "ourStory": "Notre histoire",
+      "testimonials": "Témoignages",
+      "team": "Équipe",
+      "careers": "Carrières",
+      "contactUs": "Nous joindre",
+      "branding": "Image de marque et design",
+      "strategy": "Stratégie d’affaires",
+      "marketing": "Marketing numérique",
+      "motion": "Animation graphique",
+      "web": "Développement web et mobile"
+    }
+  },
+  "language": {
+    "label": "Langue",
+    "english": "Anglais",
+    "french": "Français (Canada)"
+  },
+  "clients": {
+    "title": "Nos clients"
+  },
+  "home": {
+    "services": {
+      "title": "Nos services",
+      "whatWeCanDo": "Ce que\nnous pouvons\nfaire pour\nvous",
+      "learnMore": "En savoir plus",
+      "items": [
+        { "title": "Image de marque et design", "body": "Construisez une identité mémorable grâce à des systèmes de marque sur mesure, une direction visuelle et un design qui parle de lui-même." },
+        { "title": "Stratégie d’affaires", "body": "Transformez votre vision en une feuille de route claire qui génère une croissance mesurable." },
+        { "title": "Marketing numérique", "body": "Rejoignez le bon public grâce à des campagnes intégrées de SEO, de publicité payante et de contenu." },
+        { "title": "Animation graphique", "body": "Donnez vie à vos histoires grâce à l’animation et au motion design soignés." },
+        { "title": "Développement web et mobile", "body": "Des produits modernes et performants, conçus de bout en bout." },
+        { "title": "Art et photographie", "body": "Direction artistique et photographie originales, adaptées à votre marque." }
+      ]
+    },
+    "projects": {
+      "title": "Nos projets récents et\nhistoires à succès",
+      "filters": ["Tous les projets", "Image de marque", "Développement logiciel"]
+    },
+    "professional": {
+      "title": "Nos services professionnels de gestion\npour une efficacité accrue",
+      "intro": "Rehaussez votre pratique grâce à nos services experts de gestion. Des opérations simplifiées aux flux de travail optimisés, nous nous concentrons sur l’efficacité pour que vous puissiez vous consacrer à l’excellence de vos livrables.",
+      "cta": "Obtenez votre proposition gratuite",
+      "items": [
+        { "title": "Recherche simplifiée", "description": "Notre processus de recherche combine étude de marché, analyse concurrentielle, données sur le public et évaluation de la marque afin de comprendre vos objectifs. Grâce à des entretiens stratégiques et à l’analyse de données, nous identifions les occasions qui orientent vos décisions en image de marque, marketing et design numérique." },
+        { "title": "Idéation structurée", "description": "Nous identifions les défis d’affaires, les comportements du public et les occasions de croissance à travers la stratégie, la recherche et la planification créative. En comprenant vos clients et vos objectifs, nous élaborons des solutions ciblées qui renforcent la communication et l’engagement." },
+        { "title": "Design par la réflexion", "description": "Notre processus de design transforme votre stratégie d’affaires en une identité visuelle forte et en un système marketing cohérent. En combinant image de marque, création et marketing ciblé, nous créons des expériences client uniformes qui renforcent la reconnaissance et l’engagement." },
+        { "title": "Mise en œuvre maîtrisée", "description": "La phase de mise en œuvre donne vie à votre stratégie de marque par le lancement de sites web, de campagnes marketing, de contenu et d’actifs numériques. Nous suivons la performance, optimisons les résultats et adaptons les stratégies pour améliorer l’engagement et la visibilité." },
+        { "title": "Suivi des résultats", "description": "Notre processus d’amélioration continue s’appuie sur les commentaires clients, les tendances du marché et les données de performance pour raffiner vos stratégies. En surveillant les résultats et en nous adaptant aux comportements changeants, nous aidons les entreprises à rester compétitives et à croître durablement." }
+      ]
+    },
+    "posts": {
+      "title": "Articles populaires",
+      "sub": "L’impact réel de la technologie sur le milieu de travail et comment il évolue.",
+      "viewAll": "Tout voir",
+      "readMore": "Lire la suite"
+    },
+    "cta": {
+      "title": "Faites reconnaître\nvotre entreprise\nà l’échelle mondiale",
+      "sub": "Contactez-nous pour une consultation gratuite et sans obligation, et commencez à grandir dès aujourd’hui.",
+      "button": "Commencez dès aujourd’hui !"
+    }
+  },
+  "about": {
+    "hero": {
+      "title": "Notre identité",
+      "sub": "Nous ne sommes pas qu’une agence. Nous sommes votre partenaire créatif.",
+      "heading": "Transformez vos idées en une marque mondiale d’excellence grâce à nos solutions créatives tout-en-un",
+      "body": "JadeMediaPro défend les initiatives audacieuses et invite les autres à se joindre au parcours. Fort de plus de 800 projets dans l’espace numérique, nous offrons des solutions flexibles et rentables. Nous nous concentrons sur des standards visuels, verbaux et expérientiels qui génèrent des expériences significatives pour nos clients.",
+      "book": "Prendre rendez-vous",
+      "missionTitle": "Mission",
+      "missionBody": "Notre mission est d’aider nos clients à atteindre l’excellence grâce à des stratégies numériques durables.",
+      "visionTitle": "Vision",
+      "visionBody": "Créer des expériences de marque fluides et cohérentes pour les clients sur tous les points de contact numériques."
+    },
+    "why": {
+      "title": "Pourquoi vous adorerez JadeMediaPro ?",
+      "sub": "Nous donnons vie aux marques par la stratégie créative, une identité forte et des expériences porteuses de sens qui aident les entreprises à croître, à générer des revenus et à créer un impact réel. En prenant en charge le gros du travail, nous offrons des solutions accessibles et innovantes, guidées par les valeurs qui définissent tout ce que nous faisons.",
+      "items": [
+        { "title": "Excellence :", "body": "Nous travaillons avec passion pour offrir des services d’excellence et satisfaire nos clients avec le plus grand soin." },
+        { "title": "Communication ouverte :", "body": "Nous adoptons une approche de porte ouverte pour communiquer les messages, les valeurs et la mission." },
+        { "title": "Axés sur l’humain :", "body": "Nous accordons une grande valeur au bien-être et aux contributions de notre équipe, notre atout le plus important." },
+        { "title": "Intégrité :", "body": "Nous traitons chacun avec dignité et honnêteté, et tenons notre équipe et nos clients en haute estime." },
+        { "title": "Résultats optimisés par la technologie :", "body": "Nous concentrons notre temps, notre énergie et notre passion sur la qualité et les résultats technologiquement avancés." },
+        { "title": "Fièrement à propriété noire :", "body": "Nous restons fidèles à nos racines et embrassons notre diversité tout en engageant un public mondial." }
+      ]
+    },
+    "giving": {
+      "title": "Redonner à la\ncommunauté",
+      "sub": "Rehaussez votre entreprise sociale grâce à notre engagement communautaire. Trouvez votre raison d’être et l’élan pour améliorer le monde.",
+      "partnership": "En partenariat avec OTFoundation",
+      "explore": "EN SAVOIR PLUS • EN SAVOIR PLUS • "
+    }
+  },
+  "services": {
+    "hero": {
+      "titlePart1": "Nous n’offrons pas que",
+      "titleHighlight": "des services, nous bâtissons des marques",
+      "titlePart2": "qui gagnent vraiment",
+      "sub": "Du concept à l’exécution, notre travail donne aux entreprises et aux marques des visuels remarquables et un récit précis."
+    },
+    "what": {
+      "title": "Ce que nous faisons de mieux",
+      "cta": "Travaillons ensemble",
+      "items": [
+        {
+          "title": "Image de marque et design",
+          "label": "Stratégie de marque",
+          "body": "Nous créons des identités de marque qui n’ont pas seulement belle allure — elles portent du sens. Du positionnement et du naming aux systèmes de logos, à la typographie, aux couleurs et aux lignes directrices complètes, nous vous aidons à définir votre existence, ce que vous représentez et la façon dont vous connectez avec les gens qui comptent.",
+          "tags": ["Stratégie de marque","Design de logo","Identité visuelle","Lignes directrices","Naming","Positionnement","Systèmes typographiques","Systèmes de couleurs","Emballage","Refonte de marque","Audit de marque","Guides de style"]
+        },
+        {
+          "title": "Stratégie d’affaires",
+          "label": "Stratégie de croissance",
+          "body": "Les grandes marques reposent sur une grande stratégie. Nous accompagnons les fondateurs et les équipes de direction pour transformer l’ambition en un plan clair et mesurable, en cartographiant les marchés, en affinant le positionnement et en identifiant les canaux qui feront bouger l’aiguille.",
+          "tags": ["Étude de marché","Mise en marché","Analyse concurrentielle","Positionnement","Feuille de route","Modélisation des revenus","Insights clients","Cadres d’ICP","Stratégie de prix","Modèle d’affaires","Ateliers","Consultation"]
+        },
+        {
+          "title": "Marketing numérique",
+          "label": "Marketing à la performance",
+          "body": "Nous menons des campagnes numériques intégrées qui transforment l’attention en croissance mesurable. Du SEO au marketing de contenu, aux médias payants, à l’automatisation courriel et au social, chaque canal est orchestré autour de votre entonnoir et suivi selon de vrais ICP.",
+          "tags": ["SEO","Recherche payante","Réseaux sociaux payants","Marketing de contenu","Automatisation courriel","Optimisation de conversion","Analytique","Entonnoirs marketing","Génération de prospects","Reciblage","Attribution","Tests A/B"]
+        },
+        {
+          "title": "Animation graphique",
+          "label": "Motion et vidéo",
+          "body": "Le mouvement rend les idées mémorables. Nous concevons et animons des films de marque, des vidéos explicatives, des découpages sociaux et du motion UI qui donnent vie à votre récit sur tous les écrans.",
+          "tags": ["Films de marque","Vidéos explicatives","Animation 2D","Animation 3D","Typographie cinétique","Storyboard","Direction artistique","Motion UI","Découpages sociaux","Génériques","Design sonore","Post-production"]
+        },
+        {
+          "title": "Développement web et mobile",
+          "label": "Ingénierie",
+          "body": "Nous concevons et développons des sites web et applications mobiles rapides, accessibles et évolutifs. Des sites vitrines et boutiques en ligne aux plateformes SaaS complexes et applis iOS/Android natives, nous couvrons UX, UI, front-end, back-end, intégrations et DevOps de bout en bout.",
+          "tags": ["Design UX/UI","React et Next.js","Applications mobiles","Commerce en ligne","CMS Headless","Plateformes SaaS","Intégrations API","Performance","Accessibilité","DevOps","Hébergement infonuagique","Maintenance"]
+        },
+        {
+          "title": "Art et photographie",
+          "label": "Direction artistique",
+          "body": "Des images originales vous distinguent. Nous dirigeons et produisons photographie, illustration et visuels 3D qui capturent votre marque sous son meilleur jour — des shootings produit et lifestyle aux campagnes éditoriales et à la post-production.",
+          "tags": ["Direction artistique","Photographie produit","Shootings lifestyle","Campagnes éditoriales","Illustration","Visuels 3D","Stylisme","Retouche","Édition photo","Bibliothèques de contenu","Prêt pour l’impression","Production de campagnes"]
+        }
+      ]
+    },
+    "elevate": {
+      "title": "Rehaussez votre marque en ligne",
+      "sub": "Nos solutions sur mesure renforcent votre présence en ligne et assurent votre croissance dans le paysage numérique.",
+      "uiuxTitle": "Design UI/UX",
+      "uiuxBody": "Audit approfondi de la présence actuelle du client sur les réseaux sociaux.",
+      "centerLabel": "Rehaussement de l’identité numérique",
+      "webTitle": "Développement de sites web",
+      "webBody": "Nos solutions sur mesure renforcent votre présence en ligne et assurent votre croissance dans le paysage numérique."
+    },
+    "faq": {
+      "items": [
+        { "q": "Combien de temps faut-il pour créer un site web ?", "a": "Les délais varient selon la portée. Nos sites web standards prennent environ 15 jours, tandis que les projets de commerce en ligne prennent généralement 30 jours du démarrage au lancement." },
+        { "q": "Combien de temps prend un projet d’image de marque ?", "a": "Un projet de logo prend environ une semaine, et un système d’identité de marque standard environ quatre semaines — incluant découverte, création, raffinement et livraison finale." },
+        { "q": "Exigez-vous un dépôt ? Quelles sont les étapes de paiement ?", "a": "Oui. Nous exigeons un dépôt de 70 % avant le début, et le 30 % restant après approbation finale — moment où nous vous remettons l’ensemble des fichiers." },
+        { "q": "Nous ne sommes pas dans la même ville. Peut-on quand même travailler ensemble ?", "a": "Absolument. La distance n’est pas un obstacle. Une bonne partie de notre clientèle est internationale ; nous gérons les projets à distance via Zoom, Google Meet, partage d’écran, épreuves PDF, présentations vidéo enregistrées et échantillons de couleurs postés au besoin." },
+        { "q": "Suis-je propriétaire des fichiers de design et des animations à la fin du projet ?", "a": "Oui. Une fois le projet livré, les fichiers de design et les animations vous appartiennent entièrement." },
+        { "q": "Suis-je propriétaire de mon site web ?", "a": "Oui — tout ce que nous construisons vous appartient à 100 %. Si vous décidez un jour de migrer vers un autre hébergeur ou une autre agence, nous vous aiderons volontiers." },
+        { "q": "Pouvez-vous mettre à jour un site web créé par une autre agence ?", "a": "Oui. Nous soutenons et mettons à jour les sites bâtis sur des systèmes de gestion de contenu standards, après évaluation de votre configuration actuelle." },
+        { "q": "Combien de révisions sont incluses dans un projet de design ?", "a": "Nous investissons beaucoup dans la recherche avant les maquettes ; nous prévoyons donc une révision majeure après le design initial. Les petits ajustements sont attendus, mais les changements structurels après approbation peuvent être facturés." },
+        { "q": "En quoi le marketing numérique bénéficie-t-il à mon entreprise ?", "a": "Le marketing numérique offre à votre produit, service et marque une exposition significative auprès de personnes activement intéressées — générant du trafic qualifié, des prospects et des décisions d’achat." },
+        { "q": "À quoi puis-je m’attendre lors de notre premier appel ?", "a": "Notre processus débute par un appel de découverte de 30 minutes pour clarifier vos objectifs, identifier les défis et repérer des solutions. Nous envoyons ensuite une proposition pour une séance de découverte, puis, après approbation, une proposition formelle et le démarrage du projet." }
+      ]
+    },
+    "cta": {
+      "title": "Nous n’apposons notre\nnom qu’aux projets\nconçus avec fierté",
+      "button": "Nous joindre"
+    }
+  },
+  "projects": {
+    "hero": {
+      "title": "Nous créons un parcours entièrement unique pour tous nos clients",
+      "process": "Découvrez notre processus de travail",
+      "caseStudy": "Étude de cas",
+      "supremeSub": "Design de logo",
+      "heinzSub": "Image de marque",
+      "ariwaSub": "Image de marque et design",
+      "coinplaySub": "Image de marque et produit",
+      "mercedesSub": "Design imprimé"
+    },
+    "showreel": {
+      "title": "Bande démo vidéo",
+      "play": "Lecture",
+      "clickToPlay": "CLIQUEZ POUR LIRE"
+    },
+    "more": {
+      "title": "D’autres projets livrés",
+      "labelConfidence": "Un travail à la hauteur de votre confiance",
+      "labelAwareness": "Notoriété de marque créative",
+      "labelService": "Bon service",
+      "labelBrand": "Marque",
+      "tagBranding": "Image de marque",
+      "tagMobile": "Application mobile",
+      "tagPrint": "Imprimé",
+      "tag3d": "3D"
+    }
+  },
+  "casestudy": {
+    "titleLine1": "Mercedes",
+    "titleLine2": "Étude de cas – Design d’usine",
+    "client": "Le client",
+    "clientName": "Mercedes-Benz Global",
+    "expertise": "Expertise",
+    "expertiseItems": ["Design d’usine", "Visualisation industrielle", "Automatisation des flux de travail"],
+    "duration": "Durée",
+    "durationValue": "8 mois",
+    "overview": "Une plongée dans l’identité visuelle ultra-précise, alignée sur l’ingénierie de précision et l’artisanat, exactement comme le design d’usine Mercedes-Benz, avec la vision fluide de notre équipe pour de grands environnements manufacturiers fonctionnels.",
+    "challengeLabel": "Le défi",
+    "challengeTitle": "Le défi et\nla solution",
+    "challenge1": "Il fallait transformer la perception stérile de la fabrication industrielle en une expérience de marque immersive. Mercedes-Benz avait besoin d’un langage de design respectant l’écart entre l’automatisation de pointe et le flux de travail centré sur l’humain.",
+    "challenge2": "Notre solution a intégré des structures d’éclairage immersives à un cadre architectural raffiné. Nous avons élaboré un langage visuel qui traduit la précision de la chaîne d’assemblage tout en conservant l’élégance contemporaine chère à Mercedes.",
+    "readReport": "Lire le rapport complet",
+    "efficiency": "Gain d’efficacité",
+    "efficiencyIn": "Dans le flux de production",
+    "visualLabel": "Exécution visuelle",
+    "galleryTitle": "Galerie et processus",
+    "gallerySub": "Une livraison en plusieurs étapes du concept initial à l’architecture électrifiée : chaque cadre, structure et écran."
+  },
+  "process": {
+    "title": "Notre processus",
+    "intro": "Chez JadeMediaPro, forts de plus de 8 ans d’expérience en production, nous savons que le processus est la seule voie. Nous suivons une approche étape par étape en design et en développement pour vous aider à obtenir des résultats remarquables.",
+    "workflowTitle": "Notre flux de livraison\nde projet personnalisé",
+    "phases": [
+      { "label": "DÉCOUVERTE", "body": "Nous commençons par l’écoute — des rencontres pour comprendre vos objectifs, votre public et vos bases de marque existantes." },
+      { "label": "PLAN", "body": "Nous établissons une stratégie avec des jalons clairs, des livrables et un échéancier adaptés à votre projet." },
+      { "label": "CRÉATION", "body": "Notre équipe conçoit, rédige et produit chaque actif nécessaire pour donner vie à votre récit." },
+      { "label": "DÉVELOPPEMENT", "body": "Nous bâtissons, raffinons et révisons chaque élément avec vous pour que chaque détail soit juste." },
+      { "label": "LANCEMENT", "body": "Nous déployons votre projet, surveillons la performance et restons présents pour la suite." }
+    ],
+    "projectLabels": {
+      "animation": "Projet d’animation",
+      "branding": "Projet d’image de marque",
+      "illustration": "Projet d’illustration",
+      "marketing": "Projet marketing",
+      "web": "Projet de développement web/appli"
+    }
+  },
+  "team": {
+    "title": "Notre équipe",
+    "heading": "Nous sommes une équipe.\nNous aimons ce que\nnous faisons. Simple.",
+    "careerLabel": "DÉVELOPPEMENT DE CARRIÈRE",
+    "careerTitle": "Nous existons pour votre croissance et votre succès.",
+    "careerTitle2": "Vous avez ce qu’il faut ?",
+    "careerJoin": "Joignez notre équipe dès aujourd’hui",
+    "careerP1": "Des occasions professionnelles de croissance de carrière et de perfectionnement des compétences vous attendent chez JadeMediaPro.",
+    "careerP2": "Nos programmes de formation et de stages offrent un cheminement structuré vers le développement professionnel. Nous nous engageons à créer un environnement qui favorise la créativité, idéal pour les jeunes professionnels.",
+    "careerLead": "De grandes occasions vous attendent chez JadeMediaPro si vous êtes :",
+    "careerBullets": [
+      "Créatif et doté d’excellentes aptitudes en communication.",
+      "Un joueur d’équipe capable de travailler avec méthode.",
+      "Autonome et axé sur les résultats (respect des échéances).",
+      "Résolveur de problèmes, avec un souci de l’esthétique et du détail.",
+      "Doté d’excellentes capacités analytiques, au fait des tendances numériques."
+    ],
+    "careerOutro": "Nous recherchons ces qualités et plus encore chez les jeunes professionnels — des créatifs qui partagent nos valeurs d’excellence.",
+    "apply": "Postuler maintenant",
+    "prideTitle": "Nous n’apposons notre\nnom qu’aux projets\nconçus avec fierté",
+    "prideCta": "Nous joindre",
+    "members": {
+      "founder": "FONDATEUR/PDG",
+      "growth": "STRATÈGE CROISSANCE PRODUIT",
+      "designer": "DESIGNER PRODUIT SÉNIOR",
+      "cto": "DIRECTEUR TECHNIQUE",
+      "marketing": "SPÉCIALISTE MARKETING NUMÉRIQUE",
+      "sales": "RESPONSABLE VENTES ET DÉVELOPPEMENT D’AFFAIRES"
+    }
+  },
+  "contact": {
+    "title": "Nous joindre",
+    "sub": "Nous ne gérons pas seulement votre image de marque et votre marketing — nous rendons votre marque",
+    "subEm": "digne d’être partagée",
+    "subEnd": ". Audacieuse ou subtile, on s’en occupe.",
+    "labels": {
+      "name": "Nom",
+      "email": "Adresse courriel",
+      "location": "Localisation",
+      "category": "Catégorie de projet",
+      "service": "Service",
+      "availability": "Disponibilité",
+      "budget": "Fourchette budgétaire",
+      "message": "Message"
+    },
+    "placeholders": {
+      "name": "Nom",
+      "email": "vous@exemple.com",
+      "location": "Montréal",
+      "category": "Sélectionnez une catégorie",
+      "service": "Sélectionnez un service",
+      "availability": "Sélectionnez une disponibilité",
+      "budget": "Sélectionnez un budget",
+      "message": "Écrivez votre message"
+    },
+    "errors": {
+      "name": "Veuillez saisir votre nom complet",
+      "nameMax": "Le nom doit contenir moins de 100 caractères",
+      "email": "Veuillez saisir une adresse courriel valide",
+      "emailMax": "Le courriel doit contenir moins de 255 caractères",
+      "location": "Veuillez indiquer votre localisation",
+      "locationMax": "La localisation doit contenir moins de 120 caractères",
+      "category": "Veuillez sélectionner une catégorie de projet",
+      "service": "Veuillez sélectionner un service",
+      "availability": "Veuillez sélectionner une disponibilité",
+      "budget": "Veuillez sélectionner une fourchette budgétaire",
+      "message": "Le message doit contenir au moins 10 caractères",
+      "messageMax": "Le message doit contenir moins de 1000 caractères",
+      "network": "Une erreur s’est produite lors de l’envoi. Veuillez réessayer."
+    },
+    "submit": "Envoyer",
+    "submitting": "Envoi…",
+    "successTitle": "Merci — votre message est en route !",
+    "successBody": "Nous vous répondrons dans un jour ouvrable au courriel indiqué. Entre-temps, explorez nos réalisations.",
+    "successAgain": "Envoyer un autre message",
+    "info": {
+      "email": "COURRIEL",
+      "location": "LOCALISATION",
+      "phone": "TÉLÉPHONE",
+      "locationValue": "Montréal | Ottawa | Lagos"
+    },
+    "options": {
+      "services": ["Image de marque et identité","Design de site web","Développement de site web","Développement d’application mobile","Design UI/UX","SEO","Marketing numérique","Marketing sur les réseaux sociaux","Création de contenu","Animation et motion graphics","Illustration et design graphique","Intégration IA et automatisation","Consultation et stratégie"],
+      "categories": ["Nouveau projet","Mise à niveau d’un projet existant","Refonte de site web","Campagne marketing","Rafraîchissement de marque","Commerce en ligne","Plateforme SaaS","Application mobile","Site web d’entreprise","Autre"],
+      "availabilities": ["Disponibilité immédiate","Dans 2 semaines","Dans 1 mois","1 à 3 mois","Flexible"],
+      "budgets": ["Moins de 2 500 $","2 500 $ – 5 000 $","5 000 $ – 10 000 $","10 000 $ – 25 000 $","25 000 $ – 50 000 $","50 000 $ et plus"]
+    }
+  },
+  "blog": {
+    "heroTitle": "Retrouvez tous nos\nbillets de blogue ici",
+    "listTitle": "Derniers articles",
+    "listSub": "Nos billets sont rédigés par des auteurs passionnés pour vous offrir les meilleurs contenus et inspirer la communauté du design.",
+    "readMore": "Lire la suite...",
+    "viewMore": "Voir plus d’articles",
+    "featuredAuthor": "Jason Francisco",
+    "post": {
+      "moreTrending": "Autres articles tendance",
+      "viewAll": "Voir tous les articles",
+      "shareThisPost": "Partager cet article",
+      "relatedPosts": "Articles connexes recommandés",
+      "by": "Par"
+    }
+  }
+}
