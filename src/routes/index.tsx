@@ -1,6 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { Header } from "@/components/landing/Header";
-import homeLogo from "@/assets/jademediapro-logo.svg.asset.json";
+import homeLogo from "@/assets/jademediapro-logo.svg";
 import { Hero } from "@/components/landing/Hero";
 import { Clients } from "@/components/landing/Clients";
 import { Services } from "@/components/landing/Services";
@@ -30,7 +30,7 @@ export const Route = createFileRoute("/")({
 function Index() {
   return (
     <main className="min-h-screen bg-background">
-      <Header logoSrc={homeLogo.url} />
+      <Header logoSrc={homeLogo} />
       <Hero />
       <Clients />
       <Services />
