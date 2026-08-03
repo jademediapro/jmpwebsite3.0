@@ -1,26 +1,26 @@
 import { useTranslation } from "react-i18next";
-import logo0 from "@/assets/clients/Client-logo_0000_3Asset-3@2x.png.asset.json";
-import logo1 from "@/assets/clients/Client-logo_0001_2Asset-1@2x.png.asset.json";
-import logo2 from "@/assets/clients/Client-logo_0002_Asset-3@2x.png.asset.json";
-import logo3 from "@/assets/clients/Client-logo_0003_Asset-8@2x.png.asset.json";
-import logo4 from "@/assets/clients/Client-logo_0004_Asset-1@2x.png.asset.json";
-import logo5 from "@/assets/clients/Client-logo_0005_pngkey.com-rccg-logo-png-2089134.png.asset.json";
-import logo6 from "@/assets/clients/Client-logo_0009_Long-Red-AIS-white-logo-transparent.png.asset.json";
-import logo7 from "@/assets/clients/Client-logo_0011_source-01.png.asset.json";
-import logo8 from "@/assets/clients/Client-logo_0012_logo-big-blue.png.asset.json";
-import logo9 from "@/assets/clients/Client-logo_0013_V-White.png.asset.json";
+import logo0 from "@/assets/clients/client-logo-01.png";
+import logo1 from "@/assets/clients/client-logo-02.png";
+import logo2 from "@/assets/clients/client-logo-03.png";
+import logo3 from "@/assets/clients/client-logo-04.png";
+import logo4 from "@/assets/clients/client-logo-05.png";
+import logo5 from "@/assets/clients/client-logo-06.png";
+import logo6 from "@/assets/clients/client-logo-07.png";
+import logo7 from "@/assets/clients/client-logo-08.png";
+import logo8 from "@/assets/clients/client-logo-09.png";
+import logo9 from "@/assets/clients/client-logo-10.png";
 
 const logos = [
-  { src: logo0.url, alt: "Holthy" },
-  { src: logo1.url, alt: "Client" },
-  { src: logo2.url, alt: "Cendmate" },
-  { src: logo3.url, alt: "Client" },
-  { src: logo4.url, alt: "Client" },
-  { src: logo5.url, alt: "The Redeemed Christian Church of God" },
-  { src: logo6.url, alt: "AIS" },
-  { src: logo7.url, alt: "CRISPR Biotech Engineering" },
-  { src: logo8.url, alt: "Toz Home" },
-  { src: logo9.url, alt: "Client" },
+  { src: logo0, alt: "Holthy" },
+  { src: logo1, alt: "Client" },
+  { src: logo2, alt: "Cendmate" },
+  { src: logo3, alt: "Client" },
+  { src: logo4, alt: "Client" },
+  { src: logo5, alt: "The Redeemed Christian Church of God" },
+  { src: logo6, alt: "AIS" },
+  { src: logo7, alt: "CRISPR Biotech Engineering" },
+  { src: logo8, alt: "Toz Home" },
+  { src: logo9, alt: "Client" },
 ];
 
 export function Clients() {

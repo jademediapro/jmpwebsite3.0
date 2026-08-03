@@ -88,7 +88,7 @@ export function Footer() {
       <div className="mx-auto grid max-w-7xl gap-10 md:grid-cols-[1.2fr_1fr_1fr_1fr_1.4fr]">
         <div>
           <Link to="/" className="inline-flex items-center">
-            <img src={logo.url} alt="JadeMediaPro" className="h-[1.875rem] w-auto" />
+            <img src={logo} alt="JadeMediaPro" className="h-[1.875rem] w-auto" />
           </Link>
           <p className="mt-4 max-w-xs text-xs text-white/70">{t("footer.tagline")}</p>
           <div className="mt-5 flex items-center gap-3 text-white/80">

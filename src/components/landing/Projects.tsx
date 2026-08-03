@@ -1,14 +1,14 @@
 import { ArrowUpRight } from "lucide-react";
 import { Link } from "@tanstack/react-router";
 import { useTranslation } from "react-i18next";
-import ariwaHeader from "@/assets/casestudies/ariwa-header.jpg.asset.json";
-import coinplayHeader from "@/assets/casestudies/coinplay-header.jpg.asset.json";
-import tozomeHeader from "@/assets/casestudies/tozome-header.jpg.asset.json";
+import ariwaHeader from "@/assets/casestudies/ariwa-header.jpg";
+import coinplayHeader from "@/assets/casestudies/coinplay-header.jpg";
+import tozomeHeader from "@/assets/casestudies/tozome-header.jpg";
 
 const projects = [
-  { img: ariwaHeader.url, slug: "ariwa-fashion", label: "Ariwa Fashion" },
-  { img: coinplayHeader.url, slug: "coinplay", label: "Coinplay.ca" },
-  { img: tozomeHeader.url, slug: "tozome", label: "Tozome" },
+  { img: ariwaHeader, slug: "ariwa-fashion", label: "Ariwa Fashion" },
+  { img: coinplayHeader, slug: "coinplay", label: "Coinplay.ca" },
+  { img: tozomeHeader, slug: "tozome", label: "Tozome" },
 ];
 
 export function Projects() {
