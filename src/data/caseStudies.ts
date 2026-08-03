@@ -7,30 +7,30 @@ import mercedesCorridor from "@/assets/cs-corridor.jpg";
 import mercedesWall from "@/assets/cs-wall.jpg";
 import mercedesControl from "@/assets/cs-control.jpg";
 
-import tozomeHeader from "@/assets/casestudies/tozome-header.jpg.asset.json";
-import tozomeAnalysis from "@/assets/casestudies/tozome-analysis.jpg.asset.json";
-import tozomeStrategy from "@/assets/casestudies/tozome-strategy.jpg.asset.json";
-import tozomeProduction from "@/assets/casestudies/tozome-production.jpg.asset.json";
-import tozomeEditing from "@/assets/casestudies/tozome-editing.jpg.asset.json";
+import tozomeHeader from "@/assets/casestudies/tozome-header.jpg";
+import tozomeAnalysis from "@/assets/casestudies/tozome-analysis.jpg";
+import tozomeStrategy from "@/assets/casestudies/tozome-strategy.jpg";
+import tozomeProduction from "@/assets/casestudies/tozome-production.jpg";
+import tozomeEditing from "@/assets/casestudies/tozome-editing.jpg";
 
-import ariwaHeader from "@/assets/casestudies/ariwa-header.jpg.asset.json";
-import ariwaAnalysis from "@/assets/casestudies/ariwa-analysis.jpg.asset.json";
-import ariwaStrategy from "@/assets/casestudies/ariwa-strategy.jpg.asset.json";
-import ariwaDesign1 from "@/assets/casestudies/ariwa-design-01.jpg.asset.json";
-import ariwaDesign2 from "@/assets/casestudies/ariwa-design-02.jpg.asset.json";
-import ariwaDev2 from "@/assets/casestudies/ariwa-dev-02.jpg.asset.json";
-import ariwaDev3 from "@/assets/casestudies/ariwa-dev-03.jpg.asset.json";
-import ariwaColl1 from "@/assets/casestudies/ariwa-coll-01.jpg.asset.json";
-import ariwaColl2 from "@/assets/casestudies/ariwa-coll-02.jpg.asset.json";
-import ariwaColl3 from "@/assets/casestudies/ariwa-coll-03.jpg.asset.json";
+import ariwaHeader from "@/assets/casestudies/ariwa-header.jpg";
+import ariwaAnalysis from "@/assets/casestudies/ariwa-analysis.jpg";
+import ariwaStrategy from "@/assets/casestudies/ariwa-strategy.jpg";
+import ariwaDesign1 from "@/assets/casestudies/ariwa-design-01.jpg";
+import ariwaDesign2 from "@/assets/casestudies/ariwa-design-02.jpg";
+import ariwaDev2 from "@/assets/casestudies/ariwa-dev-02.jpg";
+import ariwaDev3 from "@/assets/casestudies/ariwa-dev-03.jpg";
+import ariwaColl1 from "@/assets/casestudies/ariwa-coll-01.jpg";
+import ariwaColl2 from "@/assets/casestudies/ariwa-coll-02.jpg";
+import ariwaColl3 from "@/assets/casestudies/ariwa-coll-03.jpg";
 
-import developfulHeader from "@/assets/casestudies/developful-header.jpg.asset.json";
+import developfulHeader from "@/assets/casestudies/developful-header.jpg";
 
-import coinplayHeader from "@/assets/casestudies/coinplay-header.jpg.asset.json";
-import coinplay01 from "@/assets/casestudies/coinplay-01.jpg.asset.json";
-import coinplay02 from "@/assets/casestudies/coinplay-02.jpg.asset.json";
-import coinplay03 from "@/assets/casestudies/coinplay-03.jpg.asset.json";
-import coinplay04 from "@/assets/casestudies/coinplay-04.jpg.asset.json";
+import coinplayHeader from "@/assets/casestudies/coinplay-header.jpg";
+import coinplay01 from "@/assets/casestudies/coinplay-01.jpg";
+import coinplay02 from "@/assets/casestudies/coinplay-02.jpg";
+import coinplay03 from "@/assets/casestudies/coinplay-03.jpg";
+import coinplay04 from "@/assets/casestudies/coinplay-04.jpg";
 
 type Bi = { en: string; fr: string };
 
@@ -68,7 +68,7 @@ const AR = (en: string, fr: string): Bi => ({ en, fr });
 export const caseStudies: CaseStudy[] = [
   {
     slug: "tozome",
-    hero: tozomeHeader.url,
+    hero: tozomeHeader,
     heroAlt: AR("Tozome travel storytelling case study", "Étude de cas Tozome, récit de voyage"),
     title: AR("Tozome — Travel Storytelling", "Tozome — Récits de voyage"),
     subtitle: AR("Motion & Video Case Study", "Étude de cas motion et vidéo"),
@@ -97,7 +97,7 @@ export const caseStudies: CaseStudy[] = [
           "Turn footage sourced from many travellers into a cohesive final film that represents each destination authentically. Every video had to feel approachable, delightful and cinematic — a true reflection of the culture, history and everyday life travellers encountered on the ground.",
           "Transformer des séquences captées par plusieurs voyageurs en un film final cohérent qui représente fidèlement chaque destination. Chaque vidéo devait sembler accessible, agréable et cinématographique — un vrai reflet de la culture, de l’histoire et de la vie quotidienne rencontrée sur place."
         ),
-        image: tozomeAnalysis.url,
+        image: tozomeAnalysis,
         imageAlt: AR("Analysis moodboard for Tozome travel films", "Planche d’analyse pour les films de voyage Tozome"),
       },
       {
@@ -106,7 +106,7 @@ export const caseStudies: CaseStudy[] = [
           "We built a short-form editorial framework: 2–3 minutes per film, scene changes every 3–4 seconds, and a consistent colour grade across every transition. The result feels streamlined without overdramatising a place — a rhythm designed to inspire real travel, not just clicks.",
           "Nous avons défini un cadre éditorial court : 2 à 3 minutes par film, un changement de plan toutes les 3 à 4 secondes et un étalonnage cohérent entre chaque transition. Le résultat est fluide sans surdramatiser un lieu — un rythme conçu pour susciter de vrais voyages, pas juste des clics."
         ),
-        image: tozomeStrategy.url,
+        image: tozomeStrategy,
         imageAlt: AR("Strategy frame from Tozome production", "Image de stratégie de la production Tozome"),
       },
       {
@@ -115,7 +115,7 @@ export const caseStudies: CaseStudy[] = [
           "Aerial, ground and low-light plates were shot to add dimension to each landscape. Pan-and-tilt and time-lapse techniques replaced static crowds, adding movement even in quiet moments. Golden-hour, blue-hour and night sequences layered dynamism into the final cuts.",
           "Nous avons capté des plans aériens, au sol et en basse lumière pour donner du relief à chaque paysage. Panoramiques, tilts et time-lapses ont remplacé les foules statiques et injecté du mouvement, même dans les instants calmes. Les séquences à l’heure dorée, à l’heure bleue et de nuit ajoutent du dynamisme au montage final."
         ),
-        image: tozomeProduction.url,
+        image: tozomeProduction,
         imageAlt: AR("Aerial and ground production stills", "Photogrammes de production aériens et au sol"),
       },
       {
@@ -124,7 +124,7 @@ export const caseStudies: CaseStudy[] = [
           "Consistent colour correction, subtle music and gentle transitions carry the viewer through each scene. Every film was delivered in 4K to preserve the beauty of the landscapes, with location references keyed to the dynamic movement of the footage.",
           "Un étalonnage constant, une musique subtile et des transitions douces guident le spectateur d’un plan à l’autre. Chaque film a été livré en 4K pour préserver la beauté des paysages, avec des repères de lieu synchronisés au mouvement des séquences."
         ),
-        image: tozomeEditing.url,
+        image: tozomeEditing,
         imageAlt: AR("Editing suite still for Tozome", "Photogramme de montage pour Tozome"),
       },
     ],
@@ -137,7 +137,7 @@ export const caseStudies: CaseStudy[] = [
   },
   {
     slug: "ariwa-fashion",
-    hero: ariwaHeader.url,
+    hero: ariwaHeader,
     heroAlt: AR("Ariwa leather fashion brand identity", "Identité de marque du cuir Ariwa"),
     title: AR("Ariwa Fashion — Leather Brand Identity", "Ariwa Fashion — Identité de marque cuir"),
     subtitle: AR("Branding & Design Case Study", "Étude de cas image de marque et design"),
@@ -166,7 +166,7 @@ export const caseStudies: CaseStudy[] = [
           "Design a mark that captures Ariwa’s luxurious, classy character while staying instantly recognisable on hand-crafted leather goods. Every choice — colour, stroke weight, type and layout — had to work in harmony with the products so the brand and the object felt like one thing.",
           "Créer une marque qui traduit le caractère luxueux et raffiné d’Ariwa tout en restant immédiatement reconnaissable sur des articles en cuir façonnés à la main. Chaque choix — couleur, épaisseur de trait, typographie, mise en page — devait s’harmoniser avec les produits pour que la marque et l’objet ne fassent qu’un."
         ),
-        image: ariwaAnalysis.url,
+        image: ariwaAnalysis,
         imageAlt: AR("Ariwa brand exploration boards", "Planches d’exploration de la marque Ariwa"),
       },
       {
@@ -175,7 +175,7 @@ export const caseStudies: CaseStudy[] = [
           "We ran a positioning exercise on the brand’s core attributes — modern vs. traditional, everyday vs. luxury, gendered vs. universal — and defined the values Ariwa needed to communicate. Those signals became the guardrails for every visual decision that followed.",
           "Nous avons mené un exercice de positionnement sur les attributs clés — moderne ou traditionnel, quotidien ou luxueux, genré ou universel — et défini les valeurs qu’Ariwa devait transmettre. Ces repères ont guidé toutes les décisions visuelles suivantes."
         ),
-        image: ariwaStrategy.url,
+        image: ariwaStrategy,
         imageAlt: AR("Ariwa strategy references", "Références stratégiques Ariwa"),
       },
       {
@@ -184,7 +184,7 @@ export const caseStudies: CaseStudy[] = [
           "The simpler, the better. We landed on an abstract wordmark system built on neutral tones, moderately thick strokes and a refined serif — a professional, timeless palette that complements finely hand-crafted leather without competing with it, and speaks equally to men and women.",
           "Plus c’est simple, mieux c’est. Nous avons opté pour un système de wordmark abstrait, décliné en tons neutres, avec des traits d’épaisseur modérée et un serif raffiné — une palette professionnelle et intemporelle qui accompagne le cuir façonné à la main sans lui faire d’ombre, et qui s’adresse autant aux hommes qu’aux femmes."
         ),
-        image: ariwaDesign1.url,
+        image: ariwaDesign1,
         imageAlt: AR("Ariwa wordmark and product application", "Wordmark Ariwa et application produit"),
       },
       {
@@ -193,7 +193,7 @@ export const caseStudies: CaseStudy[] = [
           "We rolled the system across business cards, letterheads, campaign pages and product touchpoints using a single colour palette and typographic hierarchy — so every asset feels part of the same family, and every future launch has a clear playbook to follow.",
           "Nous avons décliné le système sur les cartes de visite, papiers à en-tête, pages de campagne et supports produit avec une seule palette et une hiérarchie typographique unique — chaque livrable appartient à la même famille, et chaque futur lancement dispose d’un cadre clair."
         ),
-        image: ariwaDev2.url,
+        image: ariwaDev2,
         imageAlt: AR("Ariwa collateral applications", "Applications des supports Ariwa"),
       },
       {
@@ -202,15 +202,15 @@ export const caseStudies: CaseStudy[] = [
           "Product-first collateral shot from multiple angles gives customers a true sense of the piece before they buy. Sophisticated tone, concise copy and consistent colour throughout the system make every touchpoint feel intentional, elegant and unmistakably Ariwa.",
           "Des supports axés produit, photographiés sous plusieurs angles, offrent aux clients une idée juste de la pièce avant l’achat. Un ton soigné, un texte concis et une couleur constante font de chaque point de contact quelque chose d’intentionnel, d’élégant et de résolument Ariwa."
         ),
-        image: ariwaDev3.url,
+        image: ariwaDev3,
         imageAlt: AR("Ariwa retail collateral spread", "Ensemble des supports commerciaux Ariwa"),
       },
     ],
     gallery: [
-      { image: ariwaColl1.url, alt: AR("Ariwa collateral one", "Support Ariwa 1") },
-      { image: ariwaColl2.url, alt: AR("Ariwa collateral two", "Support Ariwa 2") },
-      { image: ariwaColl3.url, alt: AR("Ariwa collateral three", "Support Ariwa 3") },
-      { image: ariwaDesign2.url, alt: AR("Ariwa design detail", "Détail de design Ariwa") },
+      { image: ariwaColl1, alt: AR("Ariwa collateral one", "Support Ariwa 1") },
+      { image: ariwaColl2, alt: AR("Ariwa collateral two", "Support Ariwa 2") },
+      { image: ariwaColl3, alt: AR("Ariwa collateral three", "Support Ariwa 3") },
+      { image: ariwaDesign2, alt: AR("Ariwa design detail", "Détail de design Ariwa") },
     ],
     metaTitle: AR("Ariwa Fashion Brand Identity Case Study — JadeMediaPro", "Étude de cas — Identité Ariwa Fashion — JadeMediaPro"),
     metaDescription: AR(
@@ -221,7 +221,7 @@ export const caseStudies: CaseStudy[] = [
   },
   {
     slug: "developful",
-    hero: developfulHeader.url,
+    hero: developfulHeader,
     heroAlt: AR("Developful Swiss web agency rebrand", "Refonte de marque de l’agence suisse Developful"),
     title: AR("Developful — Swiss Web Agency Rebrand", "Developful — Refonte de la marque"),
     subtitle: AR("Branding & Web Case Study", "Étude de cas image de marque et web"),
@@ -289,7 +289,7 @@ export const caseStudies: CaseStudy[] = [
   },
   {
     slug: "coinplay",
-    hero: coinplayHeader.url,
+    hero: coinplayHeader,
     heroAlt: AR("Coinplay cryptocurrency brand identity", "Identité de marque crypto Coinplay"),
     title: AR("Coinplay.ca — Crypto Trading Brand", "Coinplay.ca — Marque de trading crypto"),
     subtitle: AR("Branding & Product Case Study", "Étude de cas image de marque et produit"),
@@ -318,7 +318,7 @@ export const caseStudies: CaseStudy[] = [
           "Design an identity that feels bold and approachable at the same time — one that captures the real image of the brand and helps a first-time crypto buyer trust the platform on sight. Logo, palette and layout all had to make the service look effortless.",
           "Créer une identité à la fois affirmée et accessible — qui traduise l’image réelle de la marque et permette à un premier acheteur crypto de faire confiance à la plateforme au premier regard. Logo, palette et mise en page devaient rendre le service évidemment simple."
         ),
-        image: coinplay01.url,
+        image: coinplay01,
         imageAlt: AR("Coinplay brand exploration artboard one", "Planche d’exploration Coinplay 1"),
       },
       {
@@ -327,7 +327,7 @@ export const caseStudies: CaseStudy[] = [
           "We anchored the identity in the two things Coinplay had to prove: speed and clarity. Content, iconography and colour were kept simple and neutral so the product’s value — buying crypto in a few taps — always leads the story.",
           "Nous avons ancré l’identité dans les deux promesses que Coinplay devait prouver : rapidité et clarté. Contenu, iconographie et couleur restent simples et neutres pour que la valeur du produit — acheter des cryptos en quelques touches — reste au premier plan."
         ),
-        image: coinplay02.url,
+        image: coinplay02,
         imageAlt: AR("Coinplay strategy artboard", "Planche stratégique Coinplay"),
       },
       {
@@ -336,7 +336,7 @@ export const caseStudies: CaseStudy[] = [
           "The mark was designed for versatility — it collapses into an icon that lives comfortably inside circular and square avatars across app stores, social profiles and hardware. Vibrant yellow tones reference the world of Bitcoin while a clean, bold typeface keeps the brand grown-up and confident.",
           "Le logo est pensé pour la polyvalence — il se réduit en icône qui s’intègre naturellement dans les avatars ronds ou carrés (app store, profils sociaux, matériel). Les tons jaunes vibrants évoquent l’univers du Bitcoin, tandis qu’une typographie nette et affirmée donne à la marque un ton mature et sûr."
         ),
-        image: coinplay03.url,
+        image: coinplay03,
         imageAlt: AR("Coinplay design artboard", "Planche de design Coinplay"),
       },
       {
@@ -345,7 +345,7 @@ export const caseStudies: CaseStudy[] = [
           "The website is fresh, modern and user-friendly, with a rigorous colour and type system, purposeful imagery and consistent layout across every page. The result is a product that looks and feels as effortless as the service it promises.",
           "Le site est frais, moderne et convivial, avec un système rigoureux de couleurs et de typographies, des images choisies et une mise en page cohérente d’une page à l’autre. Le résultat : un produit aussi fluide que la promesse du service."
         ),
-        image: coinplay04.url,
+        image: coinplay04,
         imageAlt: AR("Coinplay web product interface", "Interface produit web Coinplay"),
       },
     ],
