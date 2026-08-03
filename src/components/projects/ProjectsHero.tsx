@@ -1,8 +1,8 @@
 import { ArrowRight, ArrowUpRight } from "lucide-react";
 import { Link } from "@tanstack/react-router";
 import { useTranslation } from "react-i18next";
-import ariwaHeader from "@/assets/casestudies/ariwa-header.jpg.asset.json";
-import coinplayHeader from "@/assets/casestudies/coinplay-header.jpg.asset.json";
+import ariwaHeader from "@/assets/casestudies/ariwa-header.jpg";
+import coinplayHeader from "@/assets/casestudies/coinplay-header.jpg";
 import mercedes from "@/assets/proj-mercedes.jpg";
 
 type CardProps = {
@@ -51,7 +51,7 @@ export function ProjectsHero() {
 
         <div className="mt-6 grid items-stretch gap-4 md:grid-cols-3 md:min-h-[560px]">
           <ProjectCard
-            img={ariwaHeader.url}
+            img={ariwaHeader}
             alt="Ariwa Fashion brand identity"
             title="Ariwa Fashion"
             subtitle={t("projects.hero.ariwaSub")}
@@ -73,7 +73,7 @@ export function ProjectsHero() {
               </span>
             </Link>
             <ProjectCard
-              img={coinplayHeader.url}
+              img={coinplayHeader}
               alt="Coinplay cryptocurrency brand"
               title="Coinplay.ca"
               subtitle={t("projects.hero.coinplaySub")}

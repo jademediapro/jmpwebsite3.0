@@ -8,12 +8,12 @@ import laptop from "@/assets/proj-laptop.jpg";
 import cup from "@/assets/proj-cup.jpg";
 import patches from "@/assets/proj-patches.jpg";
 import neon from "@/assets/proj-neon.jpg";
-import tozomeHeader from "@/assets/casestudies/tozome-header.jpg.asset.json";
-import developfulHeader from "@/assets/casestudies/developful-header.jpg.asset.json";
+import tozomeHeader from "@/assets/casestudies/tozome-header.jpg";
+import developfulHeader from "@/assets/casestudies/developful-header.jpg";
 
 const featuredCaseStudies = [
-  { img: tozomeHeader.url, slug: "tozome", label: "Tozome", tagKey: "tagMobile" as const },
-  { img: developfulHeader.url, slug: "developful", label: "Developful", tagKey: "tagBranding" as const },
+  { img: tozomeHeader, slug: "tozome", label: "Tozome", tagKey: "tagMobile" as const },
+  { img: developfulHeader, slug: "developful", label: "Developful", tagKey: "tagBranding" as const },
 ];
 
 type TileProps = {
