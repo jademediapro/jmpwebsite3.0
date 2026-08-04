@@ -1,4 +1,4 @@
-export const SITE_URL = "https://pixel-perfect-polish-550.lovable.app";
+export const SITE_URL = "https://jademediapro.com";
 
 /** Absolute URL for a route path, e.g. absoluteUrl("/about"). */
 export function absoluteUrl(path: string) {
