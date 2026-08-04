@@ -37,9 +37,13 @@ export function Services() {
                 height={640}
                 className="h-56 w-full object-cover md:h-64"
               />
-              <button className="absolute right-4 top-4 grid h-12 w-12 place-items-center rounded-full bg-black text-white shadow-lg">
-                <ArrowUpRight size={18} />
-              </button>
+              <a
+                href="/services"
+                aria-label="Explore our strategy and planning services"
+                className="absolute right-4 top-4 grid h-12 w-12 place-items-center rounded-full bg-black text-white shadow-lg"
+              >
+                <ArrowUpRight size={18} aria-hidden="true" />
+              </a>
             </div>
 
             <div className="relative overflow-hidden rounded-3xl bg-brand-teal p-6 md:h-64">
@@ -73,6 +77,8 @@ export function Services() {
                 >
                   <button
                     onClick={() => setOpen(isOpen ? -1 : i)}
+                    aria-expanded={isOpen}
+                    aria-label={`${it.title} — ${isOpen ? "hide" : "show"} details`}
                     className="flex w-full items-center justify-between gap-4 px-5 py-4 text-left"
                   >
                     <span className="flex items-center gap-4 font-display text-base font-semibold text-brand-purple-deep md:text-lg">
@@ -82,14 +88,20 @@ export function Services() {
                     </span>
                     <ChevronDown
                       size={20}
+                      aria-hidden="true"
                       className={"text-brand-purple-deep transition " + (isOpen ? "rotate-180" : "")}
                     />
                   </button>
                   {isOpen && (
                     <div className="px-5 pb-5 pl-16 text-sm text-brand-purple-deep/80">
                       <p>{it.body}</p>
-                      <a href={`/services#${slug}`} className="mt-4 inline-flex items-center gap-2 rounded-full bg-white px-4 py-1.5 text-xs font-semibold text-brand-purple-deep">
+                      <a
+                        href={`/services#${slug}`}
+                        aria-label={`Learn more about ${it.title}`}
+                        className="mt-4 inline-flex items-center gap-2 rounded-full bg-white px-4 py-1.5 text-xs font-semibold text-brand-purple-deep"
+                      >
                         {t("home.services.learnMore")}
+                        <span className="sr-only"> about {it.title}</span>
                       </a>
                     </div>
                   )}
