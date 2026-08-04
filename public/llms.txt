@@ -1,0 +1,29 @@
+# JadeMediaPro
+
+> JadeMediaPro is a creative digital agency serving Montréal, Ottawa and Lagos, delivering branding, web and mobile development, video production, motion graphics and digital marketing.
+
+JadeMediaPro partners with growing brands to build identity systems, high-converting websites and content that performs. The site is available in English and Canadian French.
+
+## Pages
+
+- [Home](/): Overview of the agency, services and featured work.
+- [About](/about): Mission, vision, values and community work.
+- [Services](/services): Branding, design, strategy, marketing, motion graphics, web and mobile development, plus FAQs.
+- [Projects](/projects): Case studies and client results.
+- [Process](/process): Step-by-step workflow for animation, branding, marketing and web projects.
+- [Team](/team): The people behind JadeMediaPro and career opportunities.
+- [Blog](/blog): Articles on branding, design, marketing and technology.
+- [Contact](/contact): Project enquiry form and booking details.
+
+## Case studies
+
+- [Tozome](/projects/tozome): Video production and content strategy.
+- [Ariwa Fashion](/projects/ariwa-fashion): Brand identity and e-commerce experience.
+- [Developful](/projects/developful): Web platform design and build.
+- [CoinPlay](/projects/coinplay): Product branding and digital marketing.
+- [Mercedes](/projects/mercedes): Industrial storytelling and visual content.
+
+## Optional
+
+- [Privacy Policy](/privacy): How personal information is handled.
+- [Terms & Conditions](/terms): Engagement terms.

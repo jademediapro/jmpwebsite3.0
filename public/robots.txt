@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://pixel-perfect-polish-550.lovable.app/sitemap.xml
