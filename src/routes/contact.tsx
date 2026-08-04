@@ -1,3 +1,4 @@
+import { absoluteUrl } from "@/lib/seo";
 import { createFileRoute } from "@tanstack/react-router";
 import { useMemo, useState } from "react";
 import { useTranslation } from "react-i18next";
@@ -27,7 +28,11 @@ export const Route = createFileRoute("/contact")({
         property: "og:description",
         content: "Reach out for branding, marketing and creative partnership inquiries.",
       },
+      { property: "og:url", content: absoluteUrl("/contact") },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
     ],
+    links: [{ rel: "canonical", href: absoluteUrl("/contact") }],
   }),
   component: ContactPage,
 });

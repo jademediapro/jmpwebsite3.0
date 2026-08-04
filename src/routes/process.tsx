@@ -1,3 +1,4 @@
+import { absoluteUrl } from "@/lib/seo";
 import { createFileRoute } from "@tanstack/react-router";
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
@@ -28,7 +29,11 @@ export const Route = createFileRoute("/process")({
         content:
           "Animation, branding, illustration, marketing and web/app development project workflows.",
       },
+      { property: "og:url", content: absoluteUrl("/process") },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
     ],
+    links: [{ rel: "canonical", href: absoluteUrl("/process") }],
   }),
   component: ProcessPage,
 });

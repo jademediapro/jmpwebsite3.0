@@ -1,3 +1,4 @@
+import { absoluteUrl } from "@/lib/seo";
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { ArrowRight } from "lucide-react";
 import { useTranslation } from "react-i18next";
@@ -26,7 +27,11 @@ export const Route = createFileRoute("/team")({
         property: "og:description",
         content: "The founders, strategists, designers and engineers behind JadeMediaPro.",
       },
+      { property: "og:url", content: absoluteUrl("/team") },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
     ],
+    links: [{ rel: "canonical", href: absoluteUrl("/team") }],
   }),
   component: TeamPage,
 });

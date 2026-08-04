@@ -1,4 +1,5 @@
 import { createFileRoute, Link, notFound } from "@tanstack/react-router";
+import { SITE_URL, absoluteUrl } from "@/lib/seo";
 import { ArrowRight, TrendingUp } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import { Header } from "@/components/landing/Header";
@@ -16,19 +17,49 @@ export const Route = createFileRoute("/projects/$slug")({
   head: ({ params, loaderData }) => {
     const study = loaderData?.study;
     if (!study) return {};
+    const url = absoluteUrl(`/projects/${params.slug}`);
+    const image = `${SITE_URL}${study.hero}`;
     return {
       meta: [
         { title: study.metaTitle.en },
         { name: "description", content: study.metaDescription.en },
         { property: "og:title", content: study.metaTitle.en },
         { property: "og:description", content: study.metaDescription.en },
-        { property: "og:url", content: `/projects/${params.slug}` },
+        { property: "og:url", content: url },
         { property: "og:type", content: "article" },
-        { property: "og:image", content: study.hero },
+        { property: "og:image", content: image },
         { name: "twitter:card", content: "summary_large_image" },
-        { name: "twitter:image", content: study.hero },
+        { name: "twitter:image", content: image },
       ],
-      links: [{ rel: "canonical", href: `/projects/${params.slug}` }],
+      links: [{ rel: "canonical", href: url }],
+      scripts: [
+        {
+          type: "application/ld+json",
+          children: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "CreativeWork",
+            name: study.title.en,
+            headline: study.metaTitle.en,
+            description: study.metaDescription.en,
+            image,
+            url,
+            about: study.client.en,
+            creator: { "@type": "Organization", name: "JadeMediaPro", url: SITE_URL },
+          }),
+        },
+        {
+          type: "application/ld+json",
+          children: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            itemListElement: [
+              { "@type": "ListItem", position: 1, name: "Home", item: SITE_URL },
+              { "@type": "ListItem", position: 2, name: "Projects", item: absoluteUrl("/projects") },
+              { "@type": "ListItem", position: 3, name: study.title.en, item: url },
+            ],
+          }),
+        },
+      ],
     };
   },
   notFoundComponent: () => (

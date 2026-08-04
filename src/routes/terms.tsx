@@ -1,3 +1,4 @@
+import { absoluteUrl } from "@/lib/seo";
 import { createFileRoute } from "@tanstack/react-router";
 import { Mail, MapPin } from "lucide-react";
 import { Header } from "@/components/landing/Header";
@@ -17,7 +18,11 @@ export const Route = createFileRoute("/terms")({
         property: "og:description",
         content: "Our framework of professional excellence — read carefully.",
       },
+      { property: "og:url", content: absoluteUrl("/terms") },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
     ],
+    links: [{ rel: "canonical", href: absoluteUrl("/terms") }],
   }),
   component: TermsPage,
 });

@@ -1,3 +1,5 @@
+import { absoluteUrl } from "@/lib/seo";
+import en from "@/i18n/locales/en.json";
 import { createFileRoute } from "@tanstack/react-router";
 import { Header } from "@/components/landing/Header";
 import { Footer } from "@/components/landing/Footer";
@@ -20,6 +22,24 @@ export const Route = createFileRoute("/services")({
       {
         property: "og:description",
         content: "We don't just offer services, we build brands that actually win.",
+      },
+      { property: "og:url", content: absoluteUrl("/services") },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
+    ],
+    links: [{ rel: "canonical", href: absoluteUrl("/services") }],
+    scripts: [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          mainEntity: (en.services.faq.items as { q: string; a: string }[]).map((item) => ({
+            "@type": "Question",
+            name: item.q,
+            acceptedAnswer: { "@type": "Answer", text: item.a },
+          })),
+        }),
       },
     ],
   }),

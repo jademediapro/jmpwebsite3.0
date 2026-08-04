@@ -9,6 +9,7 @@ import {
 } from "@tanstack/react-router";
 
 import appCss from "../styles.css?url";
+import { SITE_URL } from "@/lib/seo";
 import { BackToTop } from "@/components/BackToTop";
 import "@/i18n";
 
@@ -74,14 +75,23 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Lovable App" },
-      { name: "description", content: "Lovable Generated Project" },
-      { name: "author", content: "Lovable" },
-      { property: "og:title", content: "Lovable App" },
-      { property: "og:description", content: "Lovable Generated Project" },
+      { title: "JadeMediaPro — Creative Digital Agency in Montréal" },
+      {
+        name: "description",
+        content:
+          "JadeMediaPro is a creative digital agency in Montréal delivering branding, web design, video production and digital marketing for growing brands.",
+      },
+      { name: "author", content: "JadeMediaPro" },
+      { property: "og:site_name", content: "JadeMediaPro" },
+      { property: "og:title", content: "JadeMediaPro — Creative Digital Agency in Montréal" },
+      {
+        property: "og:description",
+        content:
+          "Branding, web design, video production and digital marketing from a Montréal-based creative agency.",
+      },
       { property: "og:type", content: "website" },
-      { name: "twitter:card", content: "summary" },
-      { name: "twitter:site", content: "@Lovable" },
+      { property: "og:locale", content: "en_CA" },
+      { name: "twitter:card", content: "summary_large_image" },
     ],
     links: [
       {
@@ -93,6 +103,51 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { rel: "icon", type: "image/png", sizes: "16x16", href: "/favicon-16x16.png" },
       { rel: "apple-touch-icon", sizes: "180x180", href: "/apple-touch-icon.png" },
       { rel: "manifest", href: "/site.webmanifest" },
+    ],
+    scripts: [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "Organization",
+              "@id": `${SITE_URL}/#organization`,
+              name: "JadeMediaPro",
+              url: SITE_URL,
+              logo: `${SITE_URL}/android-chrome-512x512.png`,
+              description:
+                "Creative digital agency delivering branding, web design, video production and digital marketing.",
+              areaServed: ["Montréal", "Ottawa", "Lagos"],
+              email: "jademediapro@gmail.com",
+              sameAs: ["https://www.instagram.com/jademediapro", "https://www.linkedin.com/company/jademediapro"],
+            },
+            {
+              "@type": "WebSite",
+              "@id": `${SITE_URL}/#website`,
+              url: SITE_URL,
+              name: "JadeMediaPro",
+              publisher: { "@id": `${SITE_URL}/#organization` },
+              inLanguage: ["en-CA", "fr-CA"],
+            },
+            {
+              "@type": "LocalBusiness",
+              "@id": `${SITE_URL}/#localbusiness`,
+              name: "JadeMediaPro",
+              url: SITE_URL,
+              image: `${SITE_URL}/android-chrome-512x512.png`,
+              email: "jademediapro@gmail.com",
+              priceRange: "$$",
+              address: {
+                "@type": "PostalAddress",
+                addressLocality: "Montréal",
+                addressRegion: "QC",
+                addressCountry: "CA",
+              },
+            },
+          ],
+        }),
+      },
     ],
   }),
   shellComponent: RootShell,

@@ -1,3 +1,4 @@
+import { absoluteUrl } from "@/lib/seo";
 import { createFileRoute } from "@tanstack/react-router";
 import { Header } from "@/components/landing/Header";
 import { Footer } from "@/components/landing/Footer";
@@ -16,7 +17,11 @@ export const Route = createFileRoute("/privacy")({
         property: "og:description",
         content: "Our commitment to protecting your personal information and privacy.",
       },
+      { property: "og:url", content: absoluteUrl("/privacy") },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
     ],
+    links: [{ rel: "canonical", href: absoluteUrl("/privacy") }],
   }),
   component: PrivacyPage,
 });

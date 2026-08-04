@@ -1,3 +1,4 @@
+import { absoluteUrl } from "@/lib/seo";
 import { createFileRoute } from "@tanstack/react-router";
 import { Header } from "@/components/landing/Header";
 import homeLogo from "@/assets/jademediapro-logo.svg";
@@ -22,7 +23,11 @@ export const Route = createFileRoute("/")({
       },
       { property: "og:title", content: "JadeMediaPro — Digital Agency in Montréal" },
       { property: "og:description", content: "Branding, web, and marketing from Montréal." },
+      { property: "og:url", content: absoluteUrl("/") },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
     ],
+    links: [{ rel: "canonical", href: absoluteUrl("/") }],
   }),
   component: Index,
 });

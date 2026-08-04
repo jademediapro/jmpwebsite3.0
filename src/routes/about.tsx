@@ -1,3 +1,4 @@
+import { absoluteUrl } from "@/lib/seo";
 import { createFileRoute } from "@tanstack/react-router";
 import { Header } from "@/components/landing/Header";
 import { Footer } from "@/components/landing/Footer";
@@ -21,7 +22,11 @@ export const Route = createFileRoute("/about")({
         property: "og:description",
         content: "Our identity, mission, vision, and how we give back to the community.",
       },
+      { property: "og:url", content: absoluteUrl("/about") },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
     ],
+    links: [{ rel: "canonical", href: absoluteUrl("/about") }],
   }),
   component: AboutPage,
 });

@@ -1,3 +1,4 @@
+import { absoluteUrl } from "@/lib/seo";
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { useTranslation } from "react-i18next";
 import { Header } from "@/components/landing/Header";
@@ -20,7 +21,11 @@ export const Route = createFileRoute("/blog/")({
         property: "og:description",
         content: "Read our latest blogs and articles on branding, design and technology.",
       },
+      { property: "og:url", content: absoluteUrl("/blog") },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
     ],
+    links: [{ rel: "canonical", href: absoluteUrl("/blog") }],
   }),
   component: BlogPage,
 });
