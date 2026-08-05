@@ -6,6 +6,7 @@ import post5 from "@/assets/blog/post-5.jpg";
 import postHighConverting from "@/assets/blog/post-high-converting-website.jpg";
 import postBrandingGuide from "@/assets/blog/post-complete-branding-guide.jpg";
 import postAiMarketing from "@/assets/blog/post-ai-marketing-2026.jpg";
+import postMontreal from "@/assets/blog/post-montreal-small-business-marketing.jpg";
 
 export type BlogLocale = "en" | "fr";
 
@@ -34,6 +35,298 @@ export type BlogPost = {
 // "#### smaller heading". Blank-line separated paragraphs, bulleted lists start with "- ",
 // numbered lists with "1. ", and inline **bold** is supported.
 export const blogPosts: BlogPost[] = [
+  {
+    slug: "montreal-small-business-digital-marketing-guide",
+    image: postMontreal,
+    isoDate: "2026-08-05",
+    author: "JadeMediaPro",
+    category: { en: "Digital Marketing", fr: "Marketing numérique" },
+    date: { en: "August 5, 2026", fr: "5 août 2026" },
+    imageAlt: {
+      en: "Montréal café owner reviewing digital marketing analytics on a laptop in Old Montréal",
+      fr: "Propriétaire d’un café montréalais consultant ses statistiques de marketing numérique dans le Vieux-Montréal",
+    },
+    title: {
+      en: "Digital Marketing in Montréal: A Practical Guide for Small Businesses",
+      fr: "Marketing numérique à Montréal : guide pratique pour les PME",
+    },
+    seoTitle: {
+      en: "Digital Marketing Montréal: Small Business Guide (2026)",
+      fr: "Marketing numérique Montréal : guide PME (2026)",
+    },
+    metaDescription: {
+      en: "How Montréal small businesses win online in 2026: bilingual content, local SEO, Google Business Profile, paid ads budgets and Law 96 compliance — explained step by step.",
+      fr: "Comment les PME montréalaises réussissent en ligne en 2026 : contenu bilingue, SEO local, fiche Google, budgets publicitaires et Loi 96 — expliqués étape par étape.",
+    },
+    keywords: {
+      en: [
+        "digital marketing montreal",
+        "montreal small business marketing",
+        "local seo montreal",
+        "bilingual marketing quebec",
+        "montreal digital marketing agency for small businesses",
+      ],
+      fr: [
+        "marketing numérique Montréal",
+        "marketing PME Montréal",
+        "SEO local Montréal",
+        "marketing bilingue Québec",
+        "agence de marketing numérique Montréal",
+      ],
+    },
+    excerpt: {
+      en: "Bilingual audiences, neighbourhood search and Law 96 make Montréal its own marketing market. Here is the playbook we use with local small businesses.",
+      fr: "Public bilingue, recherche de quartier et Loi 96 font de Montréal un marché à part. Voici le plan de match que nous utilisons avec les PME d’ici.",
+    },
+    content: {
+      en: `Montréal is not a generic North American market, and marketing to it with a generic playbook is why so many small businesses here plateau. Two working languages, dense walkable neighbourhoods, strong seasonal swings and a distinct regulatory environment all change what actually works.
+
+This guide is the practical version of what we run with local clients: what to fix first, what to budget, and how to tell whether it is working.
+
+## Why Montréal is its own marketing market
+
+### Two languages, one audience
+
+Most Montréal businesses serve francophone and anglophone customers at the same time — often in the same week, sometimes in the same conversation. Search behaviour splits accordingly: someone looking for a plumber may type *plombier Rosemont* or *plumber near me*, and those two searches can surface completely different results.
+
+Publishing English-only content quietly removes you from a large share of local demand. Machine-translating it removes you from credibility instead.
+
+### Neighbourhood-level search intent
+
+Montréal customers rarely search "Montréal" — they search Plateau, Verdun, Griffintown, Rosemont, NDG, Laval, Longueuil. Local intent here is hyper-granular, which is good news for small businesses: neighbourhood terms are far easier to rank for than city-wide ones.
+
+### Seasonality is real
+
+Terrasse season, construction detours, the winter slowdown, festival traffic in July — Montréal demand curves are sharper than the national average. Campaigns planned on an annual flat budget waste money in the slow months and run out in the busy ones.
+
+### Language compliance is part of the plan
+
+Québec's Charter of the French Language (updated by Law 96) sets requirements for commercial communications and public signage, including how trademarks and business names appear. Treat French as a first-class version of your marketing, not a translated afterthought — and confirm your specific obligations with a Québec-qualified advisor before a rebrand or new signage.
+
+## Step 1: Fix the foundations before spending on ads
+
+Paid traffic multiplies whatever your site already does. If the site converts poorly, ads multiply the loss.
+
+- **A site that loads fast on mobile data**, not office Wi-Fi.
+- **A clear offer above the fold** — what you do, who for, and the next step.
+- **One primary call to action per page**, repeated rather than competing.
+- **Contact details, service area and hours** that are impossible to miss.
+- **Real proof** — photos of your team, your space, your work, and reviews from named local customers.
+
+## Step 2: Claim and work your Google Business Profile
+
+For most Montréal small businesses, the Google Business Profile outperforms the website as a first point of contact.
+
+1. Verify the listing and lock down name, address, phone and hours (including holiday hours).
+2. Choose the most specific primary category available, not the broadest one.
+3. Add both French and English descriptions where the fields allow it.
+4. Upload real photos monthly — interiors, staff, finished work.
+5. Ask for reviews consistently, and answer every one in the language the reviewer used.
+6. Post updates for seasonal offers, closures and events.
+
+## Step 3: Build bilingual local SEO properly
+
+### Serve genuinely bilingual pages
+
+Publish real French and English versions of your key pages rather than one mixed-language page. Have French copy written or reviewed by a native Québécois writer — Canadian French vocabulary and tone differ noticeably from European French, and customers hear the difference immediately.
+
+### Target neighbourhoods, not just the city
+
+Create service pages that name the areas you actually serve. A single "Services" page competing for *marketing Montréal* will usually lose to five focused pages targeting the boroughs where your customers live.
+
+### Get listed where locals look
+
+Beyond Google: Bing Places, Apple Business Connect, Yelp, Pages Jaunes, your BIA or borough business directory, and neighbourhood Facebook groups. Keep name, address and phone identical everywhere.
+
+### Write content that answers local questions
+
+"How much does X cost in Montréal?", "Do I need a permit in my borough?", "What are your winter hours?" — this is the content that earns both search visibility and citations in AI answers.
+
+## Step 4: Choose the right paid channels
+
+- **Google Search ads** capture existing demand. Run separate French and English ad groups with matching landing pages; costs per click in the local market are typically moderate, and low competition on French terms is often an advantage.
+- **Meta ads (Facebook/Instagram)** are strong for radius targeting around a storefront and for seasonal promotions.
+- **Retargeting** is usually the cheapest converting spend a small business runs.
+- **Local sponsorships** — a neighbourhood association, a school team, a festival stand — still convert well in Montréal and produce content you can reuse.
+
+Start with one channel, prove it, then add the next. Give every campaign at least 60 to 90 days before judging it.
+
+## Step 5: Content and social that fit your capacity
+
+Consistency beats volume. A realistic Montréal small-business rhythm looks like:
+
+- One useful blog article or landing page per month, published in both languages.
+- Two to four short vertical videos per month — behind the scenes, a how-to, a customer story.
+- A monthly email to your list with something genuinely useful, not just a promotion.
+- Seasonal pushes aligned to your real demand curve, planned a quarter ahead.
+
+## Step 6: Measure what actually matters
+
+Track outcomes, not vanity metrics:
+
+- Calls, form submissions, bookings and direction requests — not impressions.
+- Conversion rate by language, so you can see if one audience is being underserved.
+- Cost per qualified lead by channel.
+- Google Business Profile actions month over month.
+- Which neighbourhood pages bring in traffic that converts.
+
+Set up conversion tracking before you launch anything paid. Without it you are buying traffic blind.
+
+## A realistic 90-day plan
+
+1. **Weeks 1–2:** Audit the site, fix speed and mobile issues, install analytics and conversion tracking.
+2. **Weeks 3–4:** Complete the Google Business Profile, correct directory listings, launch a review request routine.
+3. **Weeks 5–8:** Publish bilingual versions of your top three service pages plus two neighbourhood pages.
+4. **Weeks 9–12:** Launch one paid channel with separate French and English campaigns, then optimise weekly against cost per qualified lead.
+
+## Common mistakes we see
+
+- English-first sites with a token French page.
+- Machine-translated French that reads as European rather than Québécois.
+- Ad budgets running before conversion tracking exists.
+- Ignoring reviews, or answering them in the wrong language.
+- Targeting "Montréal" broadly instead of the boroughs that actually convert.
+- Stopping campaigns after 30 days, before local search results have moved.
+
+## How JadeMediaPro works with Montréal businesses
+
+We build strategy, brand, website and campaigns as one system, in both official languages, from our base in Montréal — with teams in Ottawa and Lagos when a project needs more range. That means the French version of your site is written, not translated, and the ads point at pages built to convert.`,
+      fr: `Montréal n’est pas un marché nord-américain générique, et c’est précisément pour cela que tant de PME d’ici plafonnent avec un plan marketing générique. Deux langues d’usage, des quartiers denses et piétonniers, une forte saisonnalité et un cadre réglementaire particulier changent ce qui fonctionne réellement.
+
+Ce guide est la version pratique de ce que nous déployons avec nos clients d’ici : quoi corriger en premier, quoi budgéter, et comment savoir si ça fonctionne.
+
+## Pourquoi Montréal est un marché à part
+
+### Deux langues, une seule clientèle
+
+La plupart des entreprises montréalaises servent des clients francophones et anglophones la même semaine, parfois dans la même conversation. La recherche suit : on cherche *plombier Rosemont* ou *plumber near me*, et ces deux requêtes donnent des résultats très différents.
+
+Publier uniquement en anglais vous retire discrètement d’une large part de la demande locale. Traduire à la machine vous retire plutôt votre crédibilité.
+
+### Une intention de recherche par quartier
+
+Les clients montréalais cherchent rarement « Montréal » : ils cherchent Plateau, Verdun, Griffintown, Rosemont, NDG, Laval, Longueuil. Bonne nouvelle pour les PME : les termes de quartier sont bien plus faciles à positionner que les termes couvrant toute la ville.
+
+### La saisonnalité est bien réelle
+
+Saison des terrasses, détours de chantier, ralentissement hivernal, achalandage des festivals en juillet : les courbes de demande montréalaises sont plus marquées que la moyenne canadienne. Un budget annuel réparti également gaspille en basse saison et manque de souffle en haute saison.
+
+### La conformité linguistique fait partie du plan
+
+La Charte de la langue française, modifiée par la Loi 96, encadre les communications commerciales et l’affichage public, y compris la présentation des marques de commerce et des noms d’entreprise. Traitez le français comme une version à part entière de votre marketing — et validez vos obligations précises auprès d’un conseiller qualifié au Québec avant une refonte de marque ou un nouvel affichage.
+
+## Étape 1 : solidifier les bases avant de payer pour du trafic
+
+La publicité multiplie ce que votre site fait déjà. Si le site convertit mal, elle multiplie la perte.
+
+- **Un site rapide sur données cellulaires**, pas seulement sur le Wi-Fi du bureau.
+- **Une offre claire dès le haut de page** : ce que vous faites, pour qui, et la prochaine étape.
+- **Un seul appel à l’action principal par page**, répété plutôt que concurrencé.
+- **Coordonnées, territoire desservi et heures** impossibles à manquer.
+- **De vraies preuves** : photos de votre équipe, de vos locaux, de vos réalisations, et avis de clients d’ici.
+
+## Étape 2 : activer votre fiche d’établissement Google
+
+Pour la majorité des PME montréalaises, la fiche Google devance le site web comme premier point de contact.
+
+1. Vérifiez la fiche et verrouillez nom, adresse, téléphone et heures (incluant les jours fériés).
+2. Choisissez la catégorie principale la plus précise, pas la plus large.
+3. Ajoutez des descriptions en français et en anglais lorsque les champs le permettent.
+4. Téléversez de vraies photos chaque mois : intérieur, équipe, travaux terminés.
+5. Demandez des avis de façon constante et répondez à chacun dans la langue utilisée.
+6. Publiez des mises à jour pour les offres saisonnières, fermetures et événements.
+
+## Étape 3 : bâtir un SEO local vraiment bilingue
+
+### Offrir de véritables pages bilingues
+
+Publiez de vraies versions française et anglaise de vos pages clés plutôt qu’une page mixte. Faites rédiger ou réviser le français par une plume québécoise : le vocabulaire et le ton diffèrent nettement du français européen, et les clients l’entendent immédiatement.
+
+### Viser les quartiers, pas seulement la ville
+
+Créez des pages de services qui nomment les secteurs que vous desservez réellement. Une seule page « Services » visant *marketing Montréal* perdra généralement contre cinq pages ciblées sur les arrondissements où vivent vos clients.
+
+### Être inscrit là où les gens cherchent
+
+Au-delà de Google : Bing Places, Apple Business Connect, Yelp, les Pages Jaunes, la SDC ou le répertoire d’entreprises de votre arrondissement, et les groupes Facebook de quartier. Nom, adresse et téléphone identiques partout.
+
+### Produire du contenu qui répond aux questions locales
+
+« Combien coûte X à Montréal ? », « Ai-je besoin d’un permis dans mon arrondissement ? », « Quelles sont vos heures d’hiver ? » : c’est ce contenu qui gagne à la fois en visibilité et en citations dans les réponses générées par l’IA.
+
+## Étape 4 : choisir les bons canaux payants
+
+- **Google Ads (recherche)** capte la demande existante. Séparez les groupes d’annonces français et anglais, avec des pages d’atterrissage correspondantes; la faible concurrence sur les termes français est souvent un avantage.
+- **Meta (Facebook/Instagram)** excelle pour le ciblage par rayon autour d’un commerce et les promotions saisonnières.
+- **Le reciblage** est souvent la dépense la plus rentable d’une PME.
+- **Les commandites locales** — association de quartier, équipe scolaire, kiosque de festival — convertissent encore bien à Montréal et génèrent du contenu réutilisable.
+
+Commencez par un canal, prouvez-le, puis ajoutez le suivant. Laissez 60 à 90 jours avant de juger une campagne.
+
+## Étape 5 : contenu et réseaux sociaux à votre échelle
+
+La constance bat le volume. Un rythme réaliste pour une PME montréalaise :
+
+- Un article ou une page utile par mois, publié dans les deux langues.
+- Deux à quatre vidéos verticales courtes par mois : coulisses, tutoriel, témoignage client.
+- Un courriel mensuel à votre liste, réellement utile et pas seulement promotionnel.
+- Des poussées saisonnières alignées sur votre vraie courbe de demande, planifiées un trimestre d’avance.
+
+## Étape 6 : mesurer ce qui compte vraiment
+
+Suivez des résultats, pas des indicateurs de vanité :
+
+- Appels, formulaires, réservations et demandes d’itinéraire — pas les impressions.
+- Taux de conversion par langue, pour repérer un public mal servi.
+- Coût par prospect qualifié, par canal.
+- Actions sur la fiche Google, d’un mois à l’autre.
+- Les pages de quartier qui amènent du trafic qui convertit.
+
+Installez le suivi des conversions avant de lancer quoi que ce soit de payant. Sans cela, vous achetez du trafic à l’aveugle.
+
+## Un plan réaliste de 90 jours
+
+1. **Semaines 1–2 :** audit du site, correction de la vitesse et du mobile, installation des analytiques et du suivi des conversions.
+2. **Semaines 3–4 :** fiche Google complétée, répertoires corrigés, routine de demande d’avis lancée.
+3. **Semaines 5–8 :** publication bilingue de vos trois principales pages de services et de deux pages de quartier.
+4. **Semaines 9–12 :** lancement d’un canal payant avec campagnes françaises et anglaises distinctes, puis optimisation hebdomadaire selon le coût par prospect qualifié.
+
+## Erreurs fréquentes
+
+- Un site pensé en anglais avec une page française symbolique.
+- Un français traduit à la machine, qui sonne européen plutôt que québécois.
+- Des budgets publicitaires lancés avant le suivi des conversions.
+- Des avis ignorés, ou des réponses dans la mauvaise langue.
+- Un ciblage « Montréal » large plutôt que les arrondissements qui convertissent.
+- Des campagnes arrêtées après 30 jours, avant que les résultats locaux bougent.
+
+## Comment JadeMediaPro accompagne les entreprises montréalaises
+
+Nous bâtissons stratégie, marque, site web et campagnes comme un seul système, dans les deux langues officielles, depuis Montréal — avec des équipes à Ottawa et à Lagos lorsqu’un projet demande plus d’envergure. Concrètement : la version française de votre site est rédigée, pas traduite, et vos publicités pointent vers des pages conçues pour convertir.`,
+    },
+    faq: {
+      en: [
+        { q: "How much should a Montréal small business spend on digital marketing?", a: "Most small businesses here start in the range of a few hundred to a few thousand dollars per month across website, content and ads, scaled to the value of one new customer. The useful benchmark is cost per qualified lead, not total spend." },
+        { q: "Do I legally need a French version of my website in Québec?", a: "Québec's Charter of the French Language, as amended by Law 96, sets requirements for commercial communications, and French is in practice essential for reaching the local market. Confirm your specific obligations with a Québec-qualified legal advisor." },
+        { q: "Is it enough to translate my English site into French?", a: "Machine translation is usually obvious to Québécois readers and undermines trust. Have French copy written or reviewed by a native Canadian French writer so tone and vocabulary land correctly." },
+        { q: "How long does local SEO take to work in Montréal?", a: "Google Business Profile improvements can show up within weeks, while ranking gains on competitive service terms usually take three to six months of consistent publishing and review activity." },
+        { q: "Should I target 'Montréal' or specific neighbourhoods?", a: "Both, but neighbourhoods first. Borough-level pages face far less competition and attract searchers who are closer to booking." },
+        { q: "Which channel should a small business start with?", a: "Fix the website and Google Business Profile first, then start with the single channel closest to existing demand — usually Google Search ads for service businesses and Meta ads for storefronts." },
+      ],
+      fr: [
+        { q: "Quel budget une PME montréalaise doit-elle prévoir en marketing numérique ?", a: "La plupart des PME d’ici commencent entre quelques centaines et quelques milliers de dollars par mois, site, contenu et publicité confondus, en fonction de la valeur d’un nouveau client. Le repère utile est le coût par prospect qualifié, pas la dépense totale." },
+        { q: "Suis-je légalement tenu d’avoir un site en français au Québec ?", a: "La Charte de la langue française, modifiée par la Loi 96, encadre les communications commerciales, et le français est de toute façon essentiel pour rejoindre le marché local. Validez vos obligations précises auprès d’un conseiller juridique qualifié au Québec." },
+        { q: "Traduire mon site anglais en français suffit-il ?", a: "La traduction automatique se remarque immédiatement au Québec et nuit à la confiance. Faites rédiger ou réviser le français par une plume d’ici pour que le ton et le vocabulaire soient justes." },
+        { q: "Combien de temps prend le SEO local à Montréal ?", a: "Les gains sur la fiche Google peuvent apparaître en quelques semaines; le positionnement sur des termes de services concurrentiels demande généralement de trois à six mois de publication et d’avis constants." },
+        { q: "Faut-il viser « Montréal » ou des quartiers précis ?", a: "Les deux, mais les quartiers d’abord. Les pages par arrondissement affrontent bien moins de concurrence et attirent des clients plus près de la décision." },
+        { q: "Par quel canal commencer ?", a: "Corrigez d’abord le site et la fiche Google, puis lancez le canal le plus proche de la demande existante : souvent Google Ads pour les entreprises de services, Meta pour les commerces." },
+      ],
+    },
+    cta: {
+      en: { label: "Book a Montréal Marketing Consultation", href: "/contact" },
+      fr: { label: "Réservez une consultation marketing à Montréal", href: "/contact" },
+    },
+  },
   {
     slug: "high-converting-website-design",
     image: postHighConverting,
