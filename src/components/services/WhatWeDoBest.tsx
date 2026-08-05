@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "@tanstack/react-router";
 import { useTranslation } from "react-i18next";
 import { ChevronDown, Palette, Briefcase, Megaphone, Film, Code, Camera } from "lucide-react";
 import brandingImg from "@/assets/service-branding-design.jpg";
@@ -78,12 +79,23 @@ export function WhatWeDoBest() {
                           </span>
                         ))}
                       </div>
-                      <a
-                        href="/contact"
-                        className="mt-5 inline-flex items-center gap-2 rounded-full bg-brand-teal-deep px-4 py-2 text-xs font-semibold text-white"
-                      >
-                        {t("services.what.cta")}
-                      </a>
+                      <div className="mt-5 flex flex-wrap items-center gap-4">
+                        <a
+                          href="/contact"
+                          className="inline-flex items-center gap-2 rounded-full bg-brand-teal-deep px-4 py-2 text-xs font-semibold text-white"
+                        >
+                          {t("services.what.cta")}
+                        </a>
+                        {meta[i].slug === "digital-marketing" && (
+                          <Link
+                            to="/blog/$slug"
+                            params={{ slug: "montreal-small-business-digital-marketing-guide" }}
+                            className="text-xs font-semibold text-brand-purple-deep underline underline-offset-4"
+                          >
+                            {t("services.what.marketingGuide")}
+                          </Link>
+                        )}
+                      </div>
                     </div>
                     <div className="relative overflow-hidden rounded-2xl">
                       <img
