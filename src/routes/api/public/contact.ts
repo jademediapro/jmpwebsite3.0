@@ -1,11 +1,10 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { z } from "zod";
-import { appendSubmissionRow, sendNotificationEmail } from "@/lib/submissions.server";
+import { getEmailConfig } from "@/lib/email/config";
+import { sendEmail } from "@/lib/email/resend.server";
+import { contactAutoReply, contactNotification } from "@/lib/email/templates";
 
-function escapeHtml(s: string) {
-  return s.replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" })[c]!);
-}
-
+// Server-side validation — mirrors the client-side schema in src/routes/contact.tsx.
 const contactSchema = z.object({
   name: z.string().trim().min(2).max(100),
   email: z.string().trim().email().max(255),
@@ -22,40 +21,31 @@ export const Route = createFileRoute("/api/public/contact")({
     handlers: {
       POST: async ({ request }) => {
         try {
-          const body = await request.json();
-          const parsed = contactSchema.safeParse(body);
+          const parsed = contactSchema.safeParse(await request.json());
           if (!parsed.success) {
             return Response.json(
               { ok: false, error: "invalid_input", issues: parsed.error.flatten() },
               { status: 400 },
             );
           }
-          const d = parsed.data;
-          await appendSubmissionRow("Contact!A:I", [
-            new Date().toISOString(),
-            d.name,
-            d.email,
-            d.location,
-            d.category,
-            d.service,
-            d.availability,
-            d.budget,
-            d.message,
-          ]);
 
-          sendNotificationEmail(
-            `New contact form submission from ${d.name}`,
-            `<h2>New Contact Form Submission</h2>
-             <p><strong>Name:</strong> ${escapeHtml(d.name)}</p>
-             <p><strong>Email:</strong> ${escapeHtml(d.email)}</p>
-             <p><strong>Location:</strong> ${escapeHtml(d.location)}</p>
-             <p><strong>Category:</strong> ${escapeHtml(d.category)}</p>
-             <p><strong>Service:</strong> ${escapeHtml(d.service)}</p>
-             <p><strong>Availability:</strong> ${escapeHtml(d.availability)}</p>
-             <p><strong>Budget:</strong> ${escapeHtml(d.budget)}</p>
-             <p><strong>Message:</strong><br/>${escapeHtml(d.message).replace(/\n/g, "<br/>")}</p>
-             <p><strong>Date:</strong> ${new Date().toLocaleString()}</p>`,
-          ).catch((e) => console.error("notify failed", e));
+          const data = parsed.data;
+          const config = getEmailConfig();
+
+          // 1. Notify the team (must succeed for the submission to count).
+          const notification = contactNotification(config.siteName, data);
+          const sent = await sendEmail({
+            ...notification,
+            replyTo: data.email, // replying goes straight back to the visitor
+            config,
+          });
+          if (!sent.ok) throw new Error("notification_failed");
+
+          // 2. Auto-reply to the visitor (best effort — never blocks the response).
+          const autoReply = contactAutoReply(config.siteName, data);
+          await sendEmail({ ...autoReply, to: [data.email], config }).catch((e) =>
+            console.error("contact auto-reply failed", e),
+          );
 
           return Response.json({ ok: true });
         } catch (err) {
