@@ -52,7 +52,9 @@ export function Posts() {
                   className="mt-3 inline-block text-xs font-semibold text-brand-purple-deep"
                 >
                   {t("home.posts.readMore")}
+                  <span className="sr-only">: {p.title[lang]}</span>
                 </Link>
+
               </div>
             </article>
           ))}
