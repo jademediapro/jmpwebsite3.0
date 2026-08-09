@@ -1,5 +1,5 @@
 import { useTranslation } from "react-i18next";
-import heroImg from "@/assets/hero-team.jpg";
+import heroTeamImage from "@/assets/hero-team.jpg";
 import { FlipWord } from "./FlipWord";
 
 export function Hero() {
@@ -29,7 +29,7 @@ export function Hero() {
 
         <div className="relative mt-8 overflow-hidden rounded-3xl">
           <img
-            src={heroImg}
+            src={heroTeamImage}
             alt="Creative team working at a digital agency in Montréal"
             width={1280}
             height={768}
