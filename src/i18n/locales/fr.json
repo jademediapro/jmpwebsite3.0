@@ -25,6 +25,27 @@
       "audience": "Engagement du public"
     }
   },
+  "freeReview": {
+    "title": "Obtenez une analyse gratuite de votre site web en seulement 10 minutes!",
+    "websitePlaceholder": "Entrez l’adresse de votre site web",
+    "websiteLabel": "Adresse du site web",
+    "open": "Demander mon analyse gratuite",
+    "invalidWebsite": "Veuillez entrer une adresse de site web valide, comme exemple.com.",
+    "popupTitle": "Recevez votre analyse gratuite",
+    "popupMessage": "Une dernière étape! Indiquez votre nom et votre adresse courriel pour que nous puissions compléter votre demande et vous envoyer l’analyse gratuite de votre site web.",
+    "name": "Nom",
+    "email": "Adresse courriel",
+    "invalidName": "Veuillez entrer votre nom (100 caractères maximum).",
+    "invalidEmail": "Veuillez entrer une adresse courriel valide.",
+    "submit": "Recevoir mon analyse gratuite",
+    "submitting": "Envoi de votre demande…",
+    "submitError": "Nous n’avons pas pu envoyer votre demande. Veuillez réessayer.",
+    "newsletterNotice": "En soumettant ce formulaire, vous vous abonnez aussi à notre infolettre. Vous pouvez vous désabonner en tout temps.",
+    "successTitle": "Votre demande a été reçue!",
+    "successMessage": "Merci! Notre équipe a reçu l’adresse de votre site web et vos coordonnées. Nous vous enverrons votre analyse gratuite par courriel.",
+    "done": "Terminer",
+    "close": "Fermer"
+  },
   "feedback": {
     "title": "Témoignages de nos clients",
     "prev": "Témoignage précédent",

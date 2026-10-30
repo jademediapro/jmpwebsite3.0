@@ -25,6 +25,27 @@
       "audience": "Audience Engagement"
     }
   },
+  "freeReview": {
+    "title": "Get Your Free Website Review in Just 10 Minutes!",
+    "websitePlaceholder": "Enter your website address",
+    "websiteLabel": "Website address",
+    "open": "Request my free website review",
+    "invalidWebsite": "Please enter a valid website address, such as example.com.",
+    "popupTitle": "Get your free website review",
+    "popupMessage": "One last step! Share your name and email so we can complete your request and send you your free website review.",
+    "name": "Name",
+    "email": "Email Address",
+    "invalidName": "Please enter your name (up to 100 characters).",
+    "invalidEmail": "Please enter a valid email address.",
+    "submit": "Get My Free Review",
+    "submitting": "Sending your request…",
+    "submitError": "We couldn't send your request. Please try again.",
+    "newsletterNotice": "By submitting, you’ll also join our newsletter. You can unsubscribe at any time.",
+    "successTitle": "Your review request is in!",
+    "successMessage": "Thank you! Our team has received your website address and contact details. We’ll send your free review to your email.",
+    "done": "Done",
+    "close": "Close"
+  },
   "feedback": {
     "title": "Our Clients Feedback",
     "prev": "Previous testimonial",
