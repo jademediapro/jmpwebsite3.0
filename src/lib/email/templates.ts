@@ -9,7 +9,7 @@ const ACCENT_COLOR = "#12B78B"; // teal
 export function escapeHtml(value: string): string {
   return value.replace(
     /[&<>"']/g,
-    (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" })[c]!,
+    (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" })[c] ?? c,
   );
 }
 
@@ -86,20 +86,29 @@ export function contactAutoReply(siteName: string, d: ContactSubmission) {
 }
 
 /** Internal notification for a new newsletter subscriber. */
-export function newsletterNotification(siteName: string, email: string, source: string) {
+export function newsletterNotification(siteName: string, email: string, source: string, review?: { name: string; website: string; language: "en" | "fr" }) {
   const html = layout(
     siteName,
-    "New newsletter subscriber",
+    review ? "New free website review request" : "New newsletter subscriber",
     row("Email", escapeHtml(email)) +
+      (review ? row("Name", escapeHtml(review.name)) + row("Website", escapeHtml(review.website)) + row("Language", review.language === "fr" ? "Canadian French" : "English") : "") +
       row("Source", escapeHtml(source)) +
       row("Received", escapeHtml(new Date().toUTCString())),
   );
 
-  return { subject: `New newsletter subscriber: ${email}`, html };
+  return { subject: review ? `Free website review requested by ${review.name}` : `New newsletter subscriber: ${email}`, html };
 }
 
 /** Welcome email sent to a new newsletter subscriber. */
-export function newsletterWelcome(siteName: string) {
+export function newsletterWelcome(siteName: string, review?: { name: string; website: string; language: "en" | "fr" }) {
+  if (review) {
+    const french = review.language === "fr";
+    const title = french ? "Votre demande d’analyse gratuite a été reçue" : "Your free website review request has been received";
+    const message = french
+      ? `Merci, ${review.name}! Notre équipe a reçu votre demande d’analyse pour ${review.website}. Nous vous enverrons votre analyse gratuite par courriel.`
+      : `Thanks, ${review.name}! Our team has received your review request for ${review.website}. We’ll send your free website review to your email.`;
+    return { subject: `${title} — ${siteName}`, html: layout(siteName, title, `<p style="font-size:14px;line-height:1.6;margin:0;">${escapeHtml(message)}</p>`) };
+  }
   const html = layout(
     siteName,
     `Welcome to the ${siteName} newsletter`,

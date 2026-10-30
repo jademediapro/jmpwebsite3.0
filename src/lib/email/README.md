@@ -47,6 +47,7 @@ src/routes/api/public/
 
 3. **Copy the API routes**
    Copy `src/routes/api/public/contact.ts` and `src/routes/api/public/newsletter.ts` (or adapt them to your framework's routing convention).
+   Also copy `src/lib/newsletter.ts`, which contains the shared newsletter/review validation schemas and browser submission helper.
 
 4. **Update defaults in `config.ts` and `templates.ts`**
    - Change `DEFAULT_SITE_NAME` in `config.ts`.
@@ -79,6 +80,14 @@ src/routes/api/public/
      body: JSON.stringify({ email: "jane@example.com", source: "footer" }),
    });
    ```
+
+## Homepage free website reviews
+
+The homepage popup posts to the same newsletter endpoint with `source: "free-website-review"`, `name`, `email`, `website`, and `language` (`en` or `fr`). Name, email, and website are required and validated on both sides. Website addresses without a scheme are normalized to HTTPS.
+
+Review requests include the website, name, and language in the team notification. Existing subscribers can still request a review without subscribing again; their unsubscribed state is preserved. The optional Resend Audience stores the name alongside the email, while the team notification retains the website and preferred language. Ordinary footer subscriptions retain their existing behavior.
+
+The popup confirms receipt only after the team notification is accepted by Resend. A bilingual acknowledgement is sent best-effort using the existing welcome-email helper. The actual review is completed and delivered by the team; no automated review engine is introduced.
 
 ## Security notes
 

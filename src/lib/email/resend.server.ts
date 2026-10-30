@@ -88,6 +88,7 @@ export async function sendEmail(input: SendEmailInput): Promise<{ ok: boolean; i
 export async function addAudienceContact(
   email: string,
   config: EmailConfig = getEmailConfig(),
+  name?: string,
 ): Promise<"created" | "duplicate" | "skipped" | "error"> {
   if (!config.audienceId) return "skipped";
 
@@ -95,13 +96,25 @@ export async function addAudienceContact(
     path: `/audiences/${config.audienceId}/contacts/${encodeURIComponent(email)}`,
     apiKey: config.apiKey,
   });
-  if (existing.ok && existing.data?.id) return "duplicate";
+  if (existing.ok && existing.data?.id) {
+    if (name) {
+      const updated = await resendFetch({
+        path: `/audiences/${config.audienceId}/contacts/${existing.data.id}`,
+        method: "PATCH",
+        apiKey: config.apiKey,
+        body: { first_name: name },
+      });
+      if (!updated.ok) return "error";
+    }
+    return "duplicate";
+  }
+  if (!existing.ok && existing.status !== 404) return "error";
 
   const created = await resendFetch<{ id: string }>({
     path: `/audiences/${config.audienceId}/contacts`,
     method: "POST",
     apiKey: config.apiKey,
-    body: { email, unsubscribed: false },
+    body: { email, unsubscribed: false, ...(name ? { first_name: name } : {}) },
   });
 
   return created.ok ? "created" : "error";
