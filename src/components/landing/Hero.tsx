@@ -1,6 +1,7 @@
 import { useTranslation } from "react-i18next";
 import heroTeamImage from "@/assets/hero-team.jpg";
 import { FlipWord } from "./FlipWord";
+import { FreeReviewOffer } from "./FreeReviewOffer";
 
 export function Hero() {
   const { t } = useTranslation();
@@ -15,16 +16,19 @@ export function Hero() {
   return (
     <section className="bg-brand-purple-deep px-4 pb-12 pt-6 text-white">
       <div className="mx-auto max-w-7xl">
-        <div className="grid gap-6 md:grid-cols-[1.4fr_1fr] md:items-end">
-          <h1 className="font-display text-4xl font-bold leading-[0.95] tracking-tight sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl">
+        <div className="grid grid-cols-[minmax(0,1fr)] gap-6 md:grid-cols-[1.4fr_1fr] md:items-end">
+          <h1 className="font-display text-3xl font-bold leading-[0.95] tracking-tight min-[375px]:text-4xl sm:text-5xl md:text-[3.4rem] lg:text-6xl xl:text-8xl">
             <span className="block whitespace-nowrap">{t("hero.title")}</span>
             <span className="mt-1 block whitespace-nowrap">
               {t("hero.in")} <FlipWord />
             </span>
           </h1>
-          <p className="max-w-xs justify-self-end text-sm text-white/70 md:text-base">
-            {t("hero.tagline")}
-          </p>
+          <div className="w-full max-w-xs md:justify-self-end">
+            <p className="text-sm text-brand-purple-foreground/70 md:text-base">
+              {t("hero.tagline")}
+            </p>
+            <FreeReviewOffer />
+          </div>
         </div>
 
         <div className="relative mt-8 overflow-hidden rounded-3xl">

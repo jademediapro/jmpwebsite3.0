@@ -3,6 +3,7 @@ import { Link } from "@tanstack/react-router";
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import logo from "@/assets/jademediapro-logo.svg";
+import { submitNewsletter } from "@/lib/newsletter";
 
 type FooterLink = { labelKey: string; to?: string; href?: string };
 
@@ -68,13 +69,7 @@ export function Footer() {
     }
     setStatus("loading");
     try {
-      const res = await fetch("/api/public/newsletter", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ email: trimmed, source: "footer" }),
-      });
-      const data = (await res.json().catch(() => ({}))) as { ok?: boolean; duplicate?: boolean };
-      if (!res.ok || !data.ok) throw new Error(`http_${res.status}`);
+      const data = await submitNewsletter({ email: trimmed, source: "footer" });
       setStatus(data.duplicate ? "duplicate" : "success");
       setEmail("");
     } catch (err) {
