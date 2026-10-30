@@ -1,0 +1,3 @@
+# Architecture rules
+- Keep free website review requests on the existing newsletter endpoint and shared Resend helpers; carrying name, website, and language through this path prevents a parallel integration and preserves ordinary subscriptions.
+- Share newsletter/review Zod schemas and browser submission logic in a browser-safe module; identical validation on both sides prevents invalid requests bypassing the popup.
